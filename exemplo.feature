@@ -4,9 +4,9 @@ Funcionalidade: Fazer login no chat da Stelo
   Como um usuário comum
   Eu quero preencher os campos com as respectivas informações
 
-   Cenário: Uma determinada situação de negócios
-    Dado uma pré condição
-    E uma outra pré condição
+   Cenário: No campo "NOME / ESTABELECIMENTO"
+    Dado preencher o NOME
+    E o campos estar vazio 
     Quando uma ação é feita pelo ator
     E uma outra ação
     E outra ação diferente
