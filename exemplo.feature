@@ -7,7 +7,7 @@ Funcionalidade: Fazer login no chat da Stelo
    Cenário: No campo "NOME / ESTABELECIMENTO"
     Dado preencher o NOME
     E o campos estar vazio 
-    Quando uma ação é feita pelo ator
+    Quando Escrever o nome "João"
     E uma outra ação
     E outra ação diferente
     Então um resultado testável é alcançado
