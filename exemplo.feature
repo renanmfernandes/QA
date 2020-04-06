@@ -1,5 +1,17 @@
-teste
+# language: pt
+Funcionalidade: Fazer login no chat da Stelo
+  A fim de realizar o login no chat da Stelo
+  Como um usuário comum
+  Eu quero preencher os campos com as respectivas informações
 
-teste 2
+   Cenário: Uma determinada situação de negócios
+    Dado uma pré condição
+    E uma outra pré condição
+    Quando uma ação é feita pelo ator
+    E uma outra ação
+    E outra ação diferente
+    Então um resultado testável é alcançado
+    E outra coisa que possamos verificar também acontece
 
-teste 3
+  Cenário: Uma situação diferente
+    ...
