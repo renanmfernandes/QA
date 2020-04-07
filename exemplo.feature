@@ -18,12 +18,12 @@ Funcionalidade: login no chat da Stelo
     Quando Eu visitar a página
     E Eu preencher os campos
 
-    E Eu digito o meu "<NOME / ESTABELECIMENTO>" in the firstname input
-    E Eu digito o meu "<CPF / CNPJ >" in the CPF OU CNPJ input
-    E Eu digito o meu "<TE-MAIL>" in the E_MAIL input
-    E Eu digito o meu "<TELEFONE>" in the TELEFONE confirmation input
+    E Eu digito o meu "<NOME / ESTABELECIMENTO>" no campo NOME / ESTABELECIMENTO
+    E Eu digito o meu "<CPF / CNPJ >" no campo CPF / CNPJ
+    E Eu digito o meu "<TE-MAIL>" no campo E_MAIL
+    E Eu digito o meu "<TELEFONE>" no campo TELEFONE confirmation
     E Eu clico no botão "ENTRAR NO CHAT"
-    Então I expect the registration to "<ResultadoEsperado>"
+    Então Espero que o registro seja "<ResultadoEsperado>"
 
     Exemplos:
     | NOME / ESTABELECIMENTO   | CPF / CNPJ            | E-MAIL                  | TELEFONE       | ResultadoEsperado |
