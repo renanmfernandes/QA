@@ -17,11 +17,11 @@ Funcionalidade: login no chat da Stelo
     Então Espero que o registro seja "<ResultadoEsperado>"
 
     Exemplos:
-    | NOME / ESTABELECIMENTO   | CPF / CNPJ            | E-MAIL                  | TELEFONE       | ResultadoEsperado |
-    | João Carlos              |                       | joão@email.com          |                | Falha             |
-    | Fernanda Gonçalves       |                       | fernanda@email.com      | .              | Falha             |
-    | Renato Santos            |                       | renato@email.c          | (52)45458-7894 | Falha             |
-    | Pizzaria Nobre           |                       | pizzarianobre@email.con | (21)11111-1111 | Falha             |
-    | Amelia Souza             |                       | amelia@email.com        | (12)22         | Falha             |
-    | Henrique Amarantos       |                       | hentique@email.com      | (31)444-444    | Falha             |
-    | Lilian Almeida           |                       | lilian@email.com        | (11)91234-5678 | Sucesso           |
+    | NOME / ESTABELECIMENTO   | CPF / CNPJ            | E-MAIL                   | TELEFONE       | ResultadoEsperado |
+    | João Carlos              | 049.750.385-95        | joão@email.com           |                | Falha             |
+    | Fernanda Gonçalves       | 123.456.789-00        | fernanda@email.co.br     | .              | Falha             |
+    | Renato Santos            | 00.128.655/0035-XX    | renato@email.c           | (52)45458-7894 | Falha             |
+    | Pizzaria Nobre           | 04.248.805/0001-00    | pizzarianobre@email.con  | (21)11111-1111 | Falha             |
+    | Amelia Souza             | 012.345.678-90        | amelia@email.com.br      | (12)22         | Falha             |
+    | Henrique Amarantos       | 706.871.712-88        | hentique@email.com       | (31)444-444    | Falha             |
+    | Lilian Almeida           | 012.345.678-90        | lilian@email.com.br      | (11)91234-5678 | Sucesso           |
