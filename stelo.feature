@@ -5,7 +5,7 @@ Funcionalidade: login no chat da Stelo
   Eu quero preencher os campos com as respectivas informações
 
 
-  Cenário: Como alguém que deseja se inscrever
+  Cenário: Como alguém que deseja se logar
     Quando Eu visitar a página
     E Eu preencher os campos
    
