@@ -4,20 +4,11 @@ Funcionalidade: login no chat da Stelo
   Como um usuário comum
   Eu quero preencher os campos com as respectivas informações
 
-   Cenário: Como um usuário válido, posso preencher o formulário para logar no chat da Stelo
-    Dado estou na tela de formulário
-    E o campos "NOME / ESTABELECIMENTO" está vazio 
-    Quando digito o nome "João dos Santos"
-    E uma outra ação
-    E outra ação diferente
-    Então um resultado testável é alcançado
-    E outra coisa que possamos verificar também acontece
 
- 
-    Cenário: Como alguém que deseja se inscrever
+  Cenário: Como alguém que deseja se inscrever
     Quando Eu visitar a página
     E Eu preencher os campos
-
+   
     E Eu digito o meu "<NOME / ESTABELECIMENTO>" no campo NOME / ESTABELECIMENTO
     E Eu digito o meu "<CPF / CNPJ >" no campo CPF / CNPJ
     E Eu digito o meu "<TE-MAIL>" no campo E_MAIL
