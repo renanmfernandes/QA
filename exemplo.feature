@@ -19,11 +19,10 @@ Funcionalidade: login no chat da Stelo
     E Eu preencher os campos
 
     E Eu digito o meu "<NOME / ESTABELECIMENTO>" in the firstname input
-    E Eu digito o meu "<E-MAIL>" in the E-MAIL input
-    E Eu digito o meu "<TELEFONE>" in the TELEFONE input
+    E Eu digito o meu "<CPF / CNPJ >" in the CPF OU CNPJ input
+    E Eu digito o meu "<TE-MAIL>" in the E_MAIL input
     E Eu digito o meu "<TELEFONE>" in the TELEFONE confirmation input
-    E I agree to the terms and conditions
-    E I click the Submit button
+    E Eu clico no botão "ENTRAR NO CHAT"
     Then I expect the registration to "<ExpectedResult>"
 
     Examples:
