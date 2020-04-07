@@ -14,7 +14,7 @@ Funcionalidade: login no chat da Stelo
     E outra coisa que possamos verificar também acontece
 
  
-    Cenário: As someone who wants to sign up
+    Cenário: Como alguém que deseja se inscrever
     Quando Eu visitar a página
     E Eu preencher os campos
 
@@ -25,7 +25,7 @@ Funcionalidade: login no chat da Stelo
     E Eu clico no botão "ENTRAR NO CHAT"
     Então I expect the registration to "<ResultadoEsperado>"
 
-    Examples:
+    Exemplos:
     | NOME / ESTABELECIMENTO   | CPF / CNPJ            | E-MAIL                  | TELEFONE       | ResultadoEsperado |
     | João Carlos              |                       | joão@email.com          |                | Falha             |
     | Fernanda Gonçalves       |                       | fernanda@email.com      | .              | Falha             |
