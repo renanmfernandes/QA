@@ -36,6 +36,7 @@ Funcionalidade: login no chat da Stelo
         E Eu clico no botão "ENTRAR NO CHAT"
         Então Espero que o registro seja "<ResultadoEsperado>"
 
+
         Exemplos:
         | NOME / ESTABELECIMENTO   | CPF / CNPJ            | E-MAIL                   | TELEFONE        | ResultadoEsperado     |
         | João Carlos              | 049.750.385-95        | joão@email.com           |                 | Insucesso             |
