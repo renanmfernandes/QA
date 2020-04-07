@@ -15,14 +15,14 @@ Funcionalidade: login no chat da Stelo
     Então Espero que o registro seja "<ResultadoEsperado>"
 
     Exemplos:
-    | NOME / ESTABELECIMENTO   | CPF / CNPJ            | E-MAIL                   | TELEFONE       | ResultadoEsperado |
-    | João Carlos              | 049.750.385-95        | joão@email.com           |                | Insucesso             |
-    | Fernanda Gonçalves       | 123.456.789-00        | fernanda@email.co.br     | .              | Insucesso             |
-    | Renato Santos            | 00.128.655/0035-XX    | renato@email.c           | (52)45458-7894 | Insucesso             |
-    | Pizzaria Nobre           | 04.248.805/0001-00    | pizzarianobre@email.con  | (21)11111-1111 | Insucesso             |
-    | Amelia Souza             | 012.345.678-90        | amelia@email.com.br      | (12)22         | Insucesso             |
-    | Henrique Amarantos       | 706.871.712-88        | hentique@email.com       | (31)444-444    | Insucesso             |
-    | Lilian Almeida           | 012.345.678-90        | lilian@email.com.br      | (11)91234-5678 | Sucesso           |
+    | NOME / ESTABELECIMENTO   | CPF / CNPJ            | E-MAIL                   | TELEFONE        | ResultadoEsperado     |
+    | João Carlos              | 049.750.385-95        | joão@email.com           |                 | Insucesso             |
+    | Fernanda Gonçalves       | 123.456.789-00        | fernanda@email.co.br     | .               | Insucesso             |
+    | Renato Santos            | 00.128.655/0035-XX    | renato@email.c           | (52)45458-7894  | Insucesso             |
+    | Pizzaria Nobre           | 04.248.805/0001-00    | pizzarianobre@email.con  | (21)11111-1111  | Insucesso             |
+    | Amelia Souza             | 012.345.678-90        | amelia@email.com.br      | (12)22          | Insucesso             |
+    | Henrique Amarantos       | 706.871.712-88        | hentique@email.com       | (31)444-444     | Insucesso             |
+    | Lilian Almeida           | 012.345.678-90        | lilian@email.com.br      | (11)91234-5678  | Sucesso               |
 
 
 Cenário: Tentativa de login no chat Stelo com NOME / ESTABELECIMENTO inválido
@@ -36,14 +36,14 @@ Cenário: Tentativa de login no chat Stelo com NOME / ESTABELECIMENTO inválido
     Então Espero que o registro seja "<ResultadoEsperado>"
 
     Exemplos:
-    | NOME / ESTABELECIMENTO   | CPF / CNPJ            | E-MAIL                   | TELEFONE       | ResultadoEsperado |
-    | João Carlos              | 049.750.385-95        | joão@email.com           |                | Insucesso             |
-    | Fernanda Gonçalves       | 123.456.789-00        | fernanda@email.co.br     | .              | Insucesso             |
-    | Renato Santos            | 00.128.655/0035-XX    | renato@email.c           | (52)45458-7894 | Insucesso             |
-    | Pizzaria Nobre           | 04.248.805/0001-00    | pizzarianobre@email.con  | (21)11111-1111 | Insucesso             |
-    | Amelia Souza             | 012.345.678-90        | amelia@email.com.br      | (12)22         | Insucesso             |
-    | Henrique Amarantos       | 706.871.712-88        | hentique@email.com       | (31)444-444    | Insucesso             |
-    | Lilian Almeida           | 012.345.678-90        | lilian@email.com.br      | (11)91234-5678 | Sucesso           |
+    | NOME / ESTABELECIMENTO   | CPF / CNPJ            | E-MAIL                   | TELEFONE        | ResultadoEsperado     |
+    | João Carlos              | 049.750.385-95        | joão@email.com           |                 | Insucesso             |
+    | Fernanda Gonçalves       | 123.456.789-00        | fernanda@email.co.br     | .               | Insucesso             |
+    | Renato Santos            | 00.128.655/0035-XX    | renato@email.c           | (52)45458-7894  | Insucesso             |
+    | Pizzaria Nobre           | 04.248.805/0001-00    | pizzarianobre@email.con  | (21)11111-1111  | Insucesso             |
+    | Amelia Souza             | 012.345.678-90        | amelia@email.com.br      | (12)22          | Insucesso             |
+    | Henrique Amarantos       | 706.871.712-88        | hentique@email.com       | (31)444-444     | Insucesso             |
+    | Lilian Almeida           | 012.345.678-90        | lilian@email.com.br      | (11)91234-5678  | Sucesso               |
 
 
 Cenário: Tentativa de login no chat Stelo com CPF / CNPJ inválido
@@ -57,14 +57,13 @@ Cenário: Tentativa de login no chat Stelo com CPF / CNPJ inválido
     Então Espero que o registro seja "<ResultadoEsperado>"
 
     Exemplos:
-    | NOME / ESTABELECIMENTO   | CPF / CNPJ            | E-MAIL                   | TELEFONE       | ResultadoEsperado |
-    | João Carlos              | 049.750.385-95        | joão@email.com           |                | Insucesso             |
-    | Fernanda Gonçalves       | 123.456.789-00        | fernanda@email.co.br     | .              | Insucesso             |
-    | Renato Santos            | 00.128.655/0035-XX    | renato@email.c           | (52)45458-7894 | Insucesso             |
-    | Pizzaria Nobre           | 04.248.805/0001-00    | pizzarianobre@email.con  | (21)11111-1111 | Insucesso             |
-    | Amelia Souza             | 012.345.678-90        | amelia@email.com.br      | (12)22         | Insucesso             |
-    | Henrique Amarantos       | 706.871.712-88        | hentique@email.com       | (31)444-444    | Insucesso             |
-    | Lilian Almeida           | 012.345.678-90        | lilian@email.com.br      | (11)91234-5678 | Sucesso           |
+    | NOME / ESTABELECIMENTO   | CPF / CNPJ            | E-MAIL                   | TELEFONE        | ResultadoEsperado     |
+    | Fernanda Gonçalves       | 123.456.789-00        | fernanda@email.co.br     | .               | Insucesso             |
+    | Renato Santos            | 00.128.655/0035-XX    | renato@email.c           | (52)45458-7894  | Insucesso             |
+    | Pizzaria Nobre           | 04.248.805/0001-00    | pizzarianobre@email.con  | (21)11111-1111  | Insucesso             |
+    | Amelia Souza             | 012.345.678-90        | amelia@email.com.br      | (12)22          | Insucesso             |
+    | Henrique Amarantos       | 706.871.712-88        | hentique@email.com       | (31)444-444     | Insucesso             |
+    | Lilian Almeida           | 012.345.678-90        | lilian@email.com.br      | (11)91234-5678  | Sucesso               |
 
 
 Cenário: Tentativa de login no chat Stelo com E-MAIL inválidos
@@ -78,11 +77,11 @@ Cenário: Tentativa de login no chat Stelo com E-MAIL inválidos
     Então Espero que o registro seja "<ResultadoEsperado>"
 
     Exemplos:
-    | NOME / ESTABELECIMENTO   | CPF / CNPJ            | E-MAIL                   | TELEFONE       | ResultadoEsperado |
-    | João Carlos              | 049.750.385-95        | joão@email.com           |                | Insucesso             |
-    | Fernanda Gonçalves       | 123.456.789-00        | fernanda@email.co.br     | .              | Insucesso             |
-    | Renato Santos            | 00.128.655/0035-XX    | renato@email.c           | (52)45458-7894 | Insucesso             |
-    | Pizzaria Nobre           | 04.248.805/0001-00    | pizzarianobre@email.con  | (21)11111-1111 | Insucesso             |
-    | Amelia Souza             | 012.345.678-90        | amelia@email.com.br      | (12)22         | Insucesso             |
-    | Henrique Amarantos       | 706.871.712-88        | hentique@email.com       | (31)444-444    | Insucesso             |
-    | Lilian Almeida           | 012.345.678-90        | lilian@email.com.br      | (11)91234-5678 | Sucesso           |
+    | NOME / ESTABELECIMENTO   | CPF / CNPJ            | E-MAIL                   | TELEFONE        | ResultadoEsperado     |
+    | João Carlos              | 049.750.385-95        | joão@email.com           |                 | Insucesso             |
+    | Fernanda Gonçalves       | 123.456.789-00        | fernanda@email.co.br     | .               | Insucesso             |
+    | Renato Santos            | 00.128.655/0035-XX    | renato@email.c           | (52)45458-7894  | Insucesso             |
+    | Pizzaria Nobre           | 04.248.805/0001-00    | pizzarianobre@email.con  | (21)11111-1111  | Insucesso             |
+    | Amelia Souza             | 012.345.678-90        | amelia@email.com.br      | (12)22          | Insucesso             |
+    | Henrique Amarantos       | 706.871.712-88        | hentique@email.com       | (31)444-444     | Insucesso             |
+    | Lilian Almeida           | 012.345.678-90        | lilian@email.com.br      | (11)91234-5678  | Sucesso               |
