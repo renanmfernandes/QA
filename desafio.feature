@@ -13,9 +13,20 @@ Funcionalidade: login no chat da Stelo
         E Eu digito o meu "<TELEFONE>" no campo TELEFONE confirmation
         E Eu clico no botão "ENTRAR NO CHAT"
         Então Espero que o registro seja "<ResultadoEsperado>"
+        
     
+    Cenário: Tentativa de login no chat Stelo sem preenchimento de campos obrigatórios
+        Quando Eu visitar a página
+        E Eu preencher os campos   
+        E Eu digito o meu "<NOME / ESTABELECIMENTO>" no campo NOME / ESTABELECIMENTO
+        E Eu digito o meu "<CPF / CNPJ >" no campo CPF / CNPJ
+        E Eu digito o meu "<E-MAIL>" no campo E-MAIL
+        E Eu digito o meu "<TELEFONE>" no campo TELEFONE confirmation
+        E Eu clico no botão "ENTRAR NO CHAT"
+        Então Espero que o registro seja "<ResultadoEsperado>"
 
-    Cenário: Tentativa de login no chat Stelo NOME / ESTABELECIMENTO inválido
+
+    Cenário: Tentativa de login no chat Stelo sem NOME / ESTABELECIMENTO válido
         Quando Eu visitar a página
         E Eu preencher os campos   
         E Eu digito o meu "<NOME / ESTABELECIMENTO>" no campo NOME / ESTABELECIMENTO
