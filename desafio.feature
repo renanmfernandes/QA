@@ -1,76 +1,77 @@
+# language: pt
 Funcionalidade: login no chat da Stelo
   A fim de realizar o login no chat da Stelo
   Como um usuário comum
   Eu quero preencher os campos com as respectivas informações
 
   
-    Cenário: Login no chat Stelo com credenciais válidas
-        Quando Eu visitar a página
-        E Eu preencher os campos   
-        E Eu digito o meu "<NOME / ESTABELECIMENTO>" no campo NOME / ESTABELECIMENTO
-        E Eu digito o meu "<CPF / CNPJ >" no campo CPF / CNPJ
-        E Eu digito o meu "<E-MAIL>" no campo E-MAIL
-        E Eu digito o meu "<TELEFONE>" no campo TELEFONE confirmation
-        E Eu clico no botão "ENTRAR NO CHAT"
-        Então Espero que o registro seja "<ResultadoEsperado>"
+  Cenário: Login no chat Stelo com credenciais válidas
+    Quando Eu visitar a página
+    E Eu preencher os campos
+    E Eu digito o meu "<NOME / ESTABELECIMENTO>" no campo NOME / ESTABELECIMENTO
+    E Eu digito o meu "<CPF / CNPJ >" no campo CPF / CNPJ
+    E Eu digito o meu "<E-MAIL>" no campo E-MAIL
+    E Eu digito o meu "<TELEFONE>" no campo TELEFONE confirmation
+    E Eu clico no botão "ENTRAR NO CHAT"
+    Então Espero que o registro seja "<ResultadoEsperado>"
 
     
-    Cenário: Tentativa de login no chat Stelo sem preenchimento de campos obrigatórios
-        Quando Eu visitar a página
-        E Eu preencher os campos   
-        E Eu digito o meu "<NOME / ESTABELECIMENTO>" no campo NOME / ESTABELECIMENTO
-        E Eu digito o meu "<CPF / CNPJ >" no campo CPF / CNPJ
-        E Eu digito o meu "<E-MAIL>" no campo E-MAIL
-        E Eu digito o meu "<TELEFONE>" no campo TELEFONE confirmation
-        E Eu clico no botão "ENTRAR NO CHAT"
-        Então Espero que o registro seja "<ResultadoEsperado>"
+  Cenário: Tentativa de login no chat Stelo sem preenchimento de campos obrigatórios
+    Quando Eu visitar a página
+    E Eu preencher os campos
+    E Eu digito o meu "<NOME / ESTABELECIMENTO>" no campo NOME / ESTABELECIMENTO
+    E Eu digito o meu "<CPF / CNPJ >" no campo CPF / CNPJ
+    E Eu digito o meu "<E-MAIL>" no campo E-MAIL
+    E Eu digito o meu "<TELEFONE>" no campo TELEFONE confirmation
+    E Eu clico no botão "ENTRAR NO CHAT"
+    Então Espero que o registro seja "<ResultadoEsperado>"
 
 
-    Cenário: Tentativa de login no chat Stelo sem NOME / ESTABELECIMENTO válido
-        Quando Eu visitar a página
-        E Eu preencher os campos   
-        E Eu digito o meu "<NOME / ESTABELECIMENTO>" no campo NOME / ESTABELECIMENTO
-        E Eu digito o meu "<CPF / CNPJ >" no campo CPF / CNPJ
-        E Eu digito o meu "<E-MAIL>" no campo E-MAIL
-        E Eu digito o meu "<TELEFONE>" no campo TELEFONE confirmation
-        E Eu clico no botão "ENTRAR NO CHAT"
-        Então Espero que o registro seja "<ResultadoEsperado>"
+  Cenário: Tentativa de login no chat Stelo sem NOME / ESTABELECIMENTO válido
+    Quando Eu visitar a página
+    E Eu preencher os campos
+    E Eu digito o meu "<NOME / ESTABELECIMENTO>" no campo NOME / ESTABELECIMENTO
+    E Eu digito o meu "<CPF / CNPJ >" no campo CPF / CNPJ
+    E Eu digito o meu "<E-MAIL>" no campo E-MAIL
+    E Eu digito o meu "<TELEFONE>" no campo TELEFONE confirmation
+    E Eu clico no botão "ENTRAR NO CHAT"
+    Então Espero que o registro seja "<ResultadoEsperado>"
 
         
-    Cenário: Tentativa de login no chat Stelo com CPF / CNPJ inválido
-        Quando Eu visitar a página
-        E Eu preencher os campos   
-        E Eu digito o meu "<NOME / ESTABELECIMENTO>" no campo NOME / ESTABELECIMENTO
-        E Eu digito o meu "<CPF / CNPJ >" no campo CPF / CNPJ
-        E Eu digito o meu "<E-MAIL>" no campo E-MAIL
-        E Eu digito o meu "<TELEFONE>" no campo TELEFONE
-        E Eu clico no botão "ENTRAR NO CHAT"
-        Então Espero que o registro seja "<ResultadoEsperado>"
+  Cenário: Tentativa de login no chat Stelo com CPF / CNPJ inválido
+    Quando Eu visitar a página
+    E Eu preencher os campos
+    E Eu digito o meu "<NOME / ESTABELECIMENTO>" no campo NOME / ESTABELECIMENTO
+    E Eu digito o meu "<CPF / CNPJ >" no campo CPF / CNPJ
+    E Eu digito o meu "<E-MAIL>" no campo E-MAIL
+    E Eu digito o meu "<TELEFONE>" no campo TELEFONE
+    E Eu clico no botão "ENTRAR NO CHAT"
+    Então Espero que o registro seja "<ResultadoEsperado>"
 
        
-    Cenário: Tentativa de login no chat Stelo com E-MAIL inválidos
-        Quando Eu visitar a página
-        E Eu preencher os campos   
-        E Eu digito o meu "<NOME / ESTABELECIMENTO>" no campo NOME / ESTABELECIMENTO
-        E Eu digito o meu "<CPF / CNPJ >" no campo CPF / CNPJ
-        E Eu digito o meu "<E-MAIL>" no campo E-MAIL
-        E Eu digito o meu "<TELEFONE>" no campo TELEFONE
-        E Eu clico no botão "ENTRAR NO CHAT"
-        Então Espero que o registro seja "<ResultadoEsperado>"
+  Cenário: Tentativa de login no chat Stelo com E-MAIL inválidos
+    Quando Eu visitar a página
+    E Eu preencher os campos
+    E Eu digito o meu "<NOME / ESTABELECIMENTO>" no campo NOME / ESTABELECIMENTO
+    E Eu digito o meu "<CPF / CNPJ >" no campo CPF / CNPJ
+    E Eu digito o meu "<E-MAIL>" no campo E-MAIL
+    E Eu digito o meu "<TELEFONE>" no campo TELEFONE
+    E Eu clico no botão "ENTRAR NO CHAT"
+    Então Espero que o registro seja "<ResultadoEsperado>"
 
 
-    Cenário: Tentativa de login no chat Stelo com TELEFONE inválidos
-        Quando Eu visitar a página
-        E Eu preencher os campos   
-        E Eu digito o meu "<NOME / ESTABELECIMENTO>" no campo NOME / ESTABELECIMENTO
-        E Eu digito o meu "<CPF / CNPJ >" no campo CPF / CNPJ
-        E Eu digito o meu "<E-MAIL>" no campo E-MAIL
-        E Eu digito o meu "<TELEFONE>" no campo TELEFONE
-        E Eu clico no botão "ENTRAR NO CHAT"
-        Então Espero que o registro seja "<ResultadoEsperado>"
+  Cenário: Tentativa de login no chat Stelo com TELEFONE inválidos
+    Quando Eu visitar a página
+    E Eu preencher os campos
+    E Eu digito o meu "<NOME / ESTABELECIMENTO>" no campo NOME / ESTABELECIMENTO
+    E Eu digito o meu "<CPF / CNPJ >" no campo CPF / CNPJ
+    E Eu digito o meu "<E-MAIL>" no campo E-MAIL
+    E Eu digito o meu "<TELEFONE>" no campo TELEFONE
+    E Eu clico no botão "ENTRAR NO CHAT"
+    Então Espero que o registro seja "<ResultadoEsperado>"
 
 
-        Exemplos:
+    Exemplos:
         | NOME / ESTABELECIMENTO   | CPF / CNPJ            | E-MAIL                   | TELEFONE        | ResultadoEsperado     |
         | João Carlos              | 049.750.385-95        | joão@email.com           |                 | Insucesso             |
         | Fernanda Gonçalves       |                       | fernanda@email.com.br    |                 | Insucesso             |
