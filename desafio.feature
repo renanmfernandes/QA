@@ -82,6 +82,3 @@ Funcionalidade: login no chat da Stelo
         | .                        | 572.268.590-92        | teste1@email.com.br      | (43)12578-5854  | Sucesso               |
         | Lilian Almeida           | 012.345.678-90        | lilian@email.com.br      | (11)91234-5678  | Sucesso               |
         | Pizzaria Nobre           | 04.248.805/0001-00    | pizzarianobre@email.com  | (21)11111-1111  | Sucesso               |
-
-      
-        
