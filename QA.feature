@@ -6,17 +6,24 @@ Funcionalidade: Login no chat da Stelo
    
 
     Cenário: Login no chat Stelo com credenciais válidas
-        Quando eu preencho os campos "Lilian Almeida", "012.345.678-90", "lilian@email.com.br", "(11)91234-5678" e clico em "ENTRAR NO CHAT"
+        Quando eu preencho os campos "<NOME / ESTABELECIMENTO>", "<CPF / CNPJ >", "<E-MAIL>", "<TELEFONE>"
+        E clico em "ENTRAR NO CHAT"
         Então Espero que seja redirecionado para a página "Chat"
     
+        Exemplos:
+        | NOME / ESTABELECIMENTO     | CPF / CNPJ              | E-MAIL                     | TELEFONE            |
+        | "Lilian Almeida"           | "012.345.678-90"        | "lilian@email.com.br"      | "(11)91234-5678"    |
 
+        
     Cenário: Login no chat Stelo com credenciais inválidas
-        Quando eu preencho os campos com os dados "João Carlos", "049.750.385-95", "joão@email.com", "sem número de telefone" e clico em "ENTRAR NO CHAT"
+        Quando eu preencho os campos com os dados "João Carlos", "049.750.385-95", "joão@email.com", "sem número de telefone"
+        E clico em "ENTRAR NO CHAT"
         Então Espero que uma mensagem "Os campos identificados com asteriscos (*) são de preenchimento obrigatório."
 
 
     Esquema de Cenário: Login no chat Stelo
-        Quando eu preencho os campos "<NOME / ESTABELECIMENTO>", "<CPF / CNPJ >", "<E-MAIL>", "<TELEFONE>" e clico em "ENTRAR NO CHAT"
+        Quando eu preencho os campos "<NOME / ESTABELECIMENTO>", "<CPF / CNPJ >", "<E-MAIL>", "<TELEFONE>"
+        E clico em "ENTRAR NO CHAT"
         Então Espero que seja redirecionado para a página "<ResultadoEsperado>"
 
         Exemplos:
@@ -26,7 +33,7 @@ Funcionalidade: Login no chat da Stelo
         | "Pizzaria Nobre"           | "04.248.805/0001-00"    | "pizzarianobre@email.com"  | "(21)11111-1111"    | "Chat"               |
 
 
-    Esquema de Cenário: Login no chat Stelo
+    Esquema de Cenário: Login no chat Stelo com c credenciaias inválidas
         Quando eu preencho os campos "<NOME / ESTABELECIMENTO>", "<CPF / CNPJ >", "<E-MAIL>", "<TELEFONE>" e clico em "ENTRAR NO CHAT"
         Então Espero que uma mensagem "<ResultadoEsperado>"    
    
