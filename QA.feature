@@ -6,7 +6,7 @@ Funcionalidade: Login no chat da Stelo
    
 
     Cenario: Login no chat Stelo com credenciais validas
-        Quando preenchido o campo NOME / ESTABELECIMENTO, o campo CPF / CNPJ, o campo E-MAIL, o campo TELEFONE com os devidas credenciais validas
+        Quando preenchido os campos "NOME / ESTABELECIMENTO", "CPF / CNPJ", "E-MAIL", "TELEFONE" com os devidas credenciais validas
         E clicado em "ENTRAR NO CHAT"
         Entao sera redirecionado para a pagina "Chat"
     
