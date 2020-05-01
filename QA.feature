@@ -2,13 +2,18 @@ Funcionalidade: Login no chat da Stelo
  
 
   Contexto:
-    Dado que estou na página de chat da Stelo
+    Dado que estou na pagina de chat da Stelo
    
 
-    Cenário: Login no chat Stelo com credenciais válidas
-        Quando eu preencho os campos "<NOME / ESTABELECIMENTO>", "<CPF / CNPJ >", "<E-MAIL>", "<TELEFONE>"
-        E clico em "ENTRAR NO CHAT"
-        Então Espero que seja redirecionado para a página "Chat"
+    Cenario: Login no chat Stelo com credenciais validas
+        Quando preenchido o campo NOME / ESTABELECIMENTO, o campo CPF / CNPJ, o campo E-MAIL, o campo TELEFONE com os devidas credenciais validas
+        E clicado em "ENTRAR NO CHAT"
+        Entao sera redirecionado para a pagina "Chat"
+    
+    Exemplo de Cenario: Login no chat Stelo com credenciais validas
+        Quando preenchido com "<NOME / ESTABELECIMENTO>" no campo NOME / ESTABELECIMENTO, "<CPF / CNPJ >" no campo CPF / CNPJ, "<E-MAIL>" no campo E-MAIL, "<TELEFONE>" no campo TELEFONE
+        E clicado em "ENTRAR NO CHAT"
+        Entao sera redirecionado para a pagina "Chat"
     
         Exemplos:
         | NOME / ESTABELECIMENTO     | CPF / CNPJ              | E-MAIL                     | TELEFONE            |
@@ -16,9 +21,14 @@ Funcionalidade: Login no chat da Stelo
 
         
     Cenário: Tentativa de login no chat Stelo sem preenchimento de campos obrigatórios
-        Quando eu preencho os campos "<NOME / ESTABELECIMENTO>", "<CPF / CNPJ >", "<E-MAIL>", "<TELEFONE>"
-        E clico em "ENTRAR NO CHAT"
-        Então Então Espero que uma mensagem "Os campos identificados com asteriscos (*) são de preenchimento obrigatório." seguido de "<ResultadoEsperado>"
+        Quando preenchido com "<NOME / ESTABELECIMENTO>", "<CPF / CNPJ >", "<E-MAIL>", "<TELEFONE>"
+        E clicado em "ENTRAR NO CHAT"
+        Entao Entao Espero que uma mensagem "Os campos identificados com asteriscos (*) são de preenchimento obrigatório." seguido de "<ResultadoEsperado>"
+    
+    Exemplo de Cenário: Tentativa de login no chat Stelo sem preenchimento de campos obrigatórios
+        Quando preenchido com "<NOME / ESTABELECIMENTO>" no campo NOME / ESTABELECIMENTO, "<CPF / CNPJ >" no campo CPF / CNPJ, "<E-MAIL>" no campo E-MAIL, "<TELEFONE>" no campo TELEFONE
+        E clicado em "ENTRAR NO CHAT"
+        Entao Entao Espero que uma mensagem "Os campos identificados com asteriscos (*) são de preenchimento obrigatório." seguido de "<ResultadoEsperado>"
 
         Exemplos:
         | NOME / ESTABELECIMENTO     | CPF / CNPJ              | E-MAIL                     | TELEFONE            | ResultadoEsperado    |
@@ -28,9 +38,9 @@ Funcionalidade: Login no chat da Stelo
 
 
     Cenário: Tentativa de login no chat Stelo sem NOME / ESTABELECIMENTO válido
-        Quando eu preencho os campos "<NOME / ESTABELECIMENTO>", "<CPF / CNPJ >", "<E-MAIL>", "<TELEFONE>"
-        E clico em "ENTRAR NO CHAT"
-        Então Então Espero que uma mensagem "Os campos identificados com asteriscos (*) são de preenchimento obrigatório." seguido de "<ResultadoEsperado>"
+        Quando preenchido os campos "<NOME / ESTABELECIMENTO>", "<CPF / CNPJ >", "<E-MAIL>", "<TELEFONE>"
+        E clicado em "ENTRAR NO CHAT"
+        Entao Entao Espero que uma mensagem "Os campos identificados com asteriscos (*) são de preenchimento obrigatório." seguido de "<ResultadoEsperado>"
 
 
         Exemplos:
@@ -41,9 +51,9 @@ Funcionalidade: Login no chat da Stelo
 
 
     Cenário: Tentativa de login no chat Stelo com CPF / CNPJ inválido
-        Quando eu preencho os campos "<NOME / ESTABELECIMENTO>", "<CPF / CNPJ >", "<E-MAIL>", "<TELEFONE>"
-        E clico em "ENTRAR NO CHAT"
-        Então Então Espero que uma mensagem "Os campos identificados com asteriscos (*) são de preenchimento obrigatório." seguido de "<ResultadoEsperado>"
+        Quando preenchido os campos "<NOME / ESTABELECIMENTO>", "<CPF / CNPJ >", "<E-MAIL>", "<TELEFONE>"
+        E clicado em "ENTRAR NO CHAT"
+        Entao Entao Espero que uma mensagem "Os campos identificados com asteriscos (*) são de preenchimento obrigatório." seguido de "<ResultadoEsperado>"
 
         Exemplos:
         | NOME / ESTABELECIMENTO     | CPF / CNPJ              | E-MAIL                     | TELEFONE            | ResultadoEsperado    |
@@ -53,9 +63,9 @@ Funcionalidade: Login no chat da Stelo
 
 
     Cenário: Tentativa de login no chat Stelo com E-MAIL inválidos
-        Quando eu preencho os campos "<NOME / ESTABELECIMENTO>", "<CPF / CNPJ >", "<E-MAIL>", "<TELEFONE>"
-        E clico em "ENTRAR NO CHAT"
-        Então Então Espero que uma mensagem "Os campos identificados com asteriscos (*) são de preenchimento obrigatório." seguido de "<ResultadoEsperado>"
+        Quando preenchido os campos "<NOME / ESTABELECIMENTO>", "<CPF / CNPJ >", "<E-MAIL>", "<TELEFONE>"
+        E clicado em "ENTRAR NO CHAT"
+        Entao Entao Espero que uma mensagem "Os campos identificados com asteriscos (*) são de preenchimento obrigatório." seguido de "<ResultadoEsperado>"
 
         Exemplos:
         | NOME / ESTABELECIMENTO     | CPF / CNPJ              | E-MAIL                     | TELEFONE            | ResultadoEsperado    |
@@ -65,9 +75,9 @@ Funcionalidade: Login no chat da Stelo
 
 
     Cenário: Tentativa de login no chat Stelo com TELEFONE inválidos
-        Quando eu preencho os campos "<NOME / ESTABELECIMENTO>", "<CPF / CNPJ >", "<E-MAIL>", "<TELEFONE>"
-        E clico em "ENTRAR NO CHAT"
-        Então Então Espero que uma mensagem "Os campos identificados com asteriscos (*) são de preenchimento obrigatório." seguido de "<ResultadoEsperado>"
+        Quando preenchido os campos "<NOME / ESTABELECIMENTO>", "<CPF / CNPJ >", "<E-MAIL>", "<TELEFONE>"
+        E clicado em "ENTRAR NO CHAT"
+        Entao Entao Espero que uma mensagem "Os campos identificados com asteriscos (*) são de preenchimento obrigatório." seguido de "<ResultadoEsperado>"
 
         Exemplos:
         | NOME / ESTABELECIMENTO     | CPF / CNPJ              | E-MAIL                     | TELEFONE            | ResultadoEsperado    |
