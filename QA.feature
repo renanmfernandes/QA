@@ -8,7 +8,7 @@ Funcionalidade: Login no chat da Stelo
     Cenario: Login no chat Stelo com credenciais validas
         Quando preenchido os campos "NOME / ESTABELECIMENTO", "CPF / CNPJ", "E-MAIL", "TELEFONE" com os devidas credenciais validas
         E clicado em "ENTRAR NO CHAT"
-        Entao sera redirecionado para a pagina "Chat" Desculpe,estamos enfrentando problemas sistêmicos, favor retornar seu contato em breve.
+        Entao sera redirecionado para a pagina "Chat" "Desculpe,estamos enfrentando problemas sistêmicos, favor retornar seu contato em breve".
     
         Exemplo de Cenario: Login no chat Stelo com credenciais validas
             Quando preenchido com "<NOME / ESTABELECIMENTO>" no campo NOME / ESTABELECIMENTO, "<CPF / CNPJ >" no campo CPF / CNPJ, "<E-MAIL>" no campo E-MAIL, "<TELEFONE>" no campo TELEFONE
@@ -18,7 +18,6 @@ Funcionalidade: Login no chat da Stelo
             Exemplos:
             | NOME / ESTABELECIMENTO     | CPF / CNPJ              | E-MAIL                     | TELEFONE            |
             | "Lilian Almeida"           | "012.345.678-90"        | "lilian@email.com.br"      | "(11)91234-5678"    |
-            | "."                        | "572.268.590-92"        | "teste1@email.com.br"      | "(43)12578-5854"    |
             | "Pizzaria Nobre"           | "04.248.805/0001-00"    | "pizzarianobre@email.com"  | "(21)11111-1111"    |
 
             
@@ -33,8 +32,11 @@ Funcionalidade: Login no chat da Stelo
             Entao Entao Espero que uma mensagem "Os campos identificados com asteriscos (*) são de preenchimento obrigatório." seguido de "<ResultadoEsperado>"
 
             Exemplos:
-            
-
+            | NOME / ESTABELECIMENTO     | CPF / CNPJ              | E-MAIL                     | TELEFONE            |
+            | "João Carlos"              | "049.750.385-95"        | "joão@email.com"           |                     |
+            | "Fernanda Gonçalves"       |                         | "fernanda@email.com.br"    |                     |
+            | "Renato Santos"            | "00.128.655/0035-00"    |                            |                     |
+ 
 
     Cenário: Tentativa de login no chat Stelo sem NOME / ESTABELECIMENTO válido
         Quando preenchido os campos "<NOME / ESTABELECIMENTO>", "<CPF / CNPJ >", "<E-MAIL>", "<TELEFONE>"
