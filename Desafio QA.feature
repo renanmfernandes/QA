@@ -2,90 +2,68 @@ Funcionalidade: Login no chat da Stelo
  
 
   Contexto:
-    Dado que estou na pagina de chat da Stelo
+    Dado que o usuario esta na pagina de login do chat da Stelo
    
+    Cenario: Login no chat da Stelo com credencias de pessoa fisica
+            Quando entrar com NOME "Pedro Almeida", CPF "012.345.678-90", E-MAIL "lilian@email.com.br" e TELEFONE "(11)91234-5678"
+            Entao visualizo a mensagem de saudacao do assistente virtual
 
-    Cenario: Login no chat Stelo com credenciais validas
-        Quando preenchido os campos "NOME / ESTABELECIMENTO", "CPF / CNPJ", "E-MAIL", "TELEFONE" com os devidos dados
-        E clicado em "ENTRAR NO CHAT"
-        Entao sera redirecionado para a pagina "Chat" 
-
-        Exemplo de Cenario: Login no chat Stelo com credenciais validas
-            Quando preenchido com "<NOME / ESTABELECIMENTO>" no campo NOME / ESTABELECIMENTO, "<CPF / CNPJ>" no campo CPF / CNPJ, "<E-MAIL>" no campo E-MAIL, "<TELEFONE>" no campo TELEFONE
-            E clicado em "ENTRAR NO CHAT"
-            Entao sera redirecionado para a pagina "Chat"
-        
-            Exemplos:
-            | NOME / ESTABELECIMENTO     | CPF / CNPJ              | E-MAIL                     | TELEFONE            |
-            | "Lilian Almeida"           | "012.345.678-90"        | "lilian@email.com.br"      | "(11)91234-5678"    |
-            | "Pizzaria Nobre"           | "04.248.805/0001-00"    | "pizzarianobre@email.com"  | "(21)11111-1111"    |
-            | "....(21215)"              | "049.750.385-95"        | "jptoid@teste.com.br"      |                     |
+    Cenario: Login no chat da Stelo com credencias de pessoa juridica
+            Quando entrar com NOME "Pizzaria Nobre", CNPJ "04.248.805/0001-00", E-MAIL "pizzarianobre@email.com" e TELEFONE ""
+            Entao visualizo a mensagem de saudacao do assistente virtual
 
             
-    Cenário: Tentativa de login no chat Stelo sem preenchimento de campos obrigatorios
-        Quando preenchido os campos "NOME / ESTABELECIMENTO", "CPF / CNPJ", "E-MAIL", "TELEFONE" com os devidos dados
-        E clicado em "ENTRAR NO CHAT"
-        Entao sera exibida as mensagens "Os campos identificados com asteriscos (*) sao de preenchimento obrigatorio." acima dos campos e o campo "Campo Obrigatorio" em destaque vermelho
+    Esquema do Cenário: Tentativa de login no chat Stelo sem preenchimento de campos obrigatorios
+        Quando entrar com NOME <NOME_ESTABELECIMENTO>, CPF <CPF_CNPJ>, E-MAIL <E-MAIL> e TELEFONE "(11)91234-5678"
+        Entao sera exibida a mensagem "Os campos identificados com asteriscos (*) sao de preenchimento obrigatorio."
     
-        Exemplo de Cenário: Tentativa de login no chat Stelo sem preenchimento de campos obrigatórios
-            Quando preenchido com "<NOME / ESTABELECIMENTO>" no campo NOME / ESTABELECIMENTO, "<CPF / CNPJ>" no campo CPF / CNPJ, "<E-MAIL>" no campo E-MAIL, "<TELEFONE>" no campo TELEFONE
-            E clicado em "ENTRAR NO CHAT"
-            Entao sera exibida as mensagens "Os campos identificados com asteriscos (*) são de preenchimento obrigatório." acima dos campos e o campo "<Campo Obrigatorio>" em destaque vermelho
-           
             Exemplos:
-            | NOME / ESTABELECIMENTO     | CPF / CNPJ              | E-MAIL                     | TELEFONE            | Campo Obrigatorio          |
-            | "Fernanda Gonçalves"       |                         | "fernanda@email.com.br"    |                     | "CPF / CNPJ"               |
-            | "Renato Santos"            | "00.128.655/0035-00"    |                            |                     | "E-MAIL"                   |
-            |                            | "572.268.590-92"        | "teste1@email.com.br"      |                     | "NOME / ESTABELECIMENTO"   |
+            | NOME_ESTABELECIMENTO     | CPF_CNPJ              | E-MAIL                     | 
+            | "Fernanda Gonçalves"     |                       | "fernanda@email.com.br"    | 
+            | "Renato Santos"          | "00.128.655/0035-00"  |                            |
+            |                          | "572.268.590-92"      | "teste1@email.com.br"      |
+
+
+    Esquema do Cenário: Tentativa de login no chat Stelo com CPF inválido
+        Quando entrar com NOME "Lilian Almeida", CPF <CPF_CNPJ>, E-MAIL "lilian@email.com.br" e TELEFONE "(11)91234-5678"
+        Entao sera exibida a mensagem "Os campos identificados com asteriscos (*) sao de preenchimento obrigatorio."
+    
+            Exemplos:
+            | CPF_CNPJ              | 
+            | "000.005.412-55"      | 
+            | "123.45X.B78-00"      | 
+            | "572.268.590"         |
+
+    
+    Esquema do Cenário:: Tentativa de login no chat Stelo com CNPJ inválido
+        Quando entrar com NOME "Lilian Almeida", CPF <CPF_CNPJ>, E-MAIL "lilian@email.com.br" e TELEFONE "(11)91234-5678"
+        Entao sera exibida a mensagem "Os campos identificados com asteriscos (*) sao de preenchimento obrigatorio."
+    
+            Exemplos:
+            | CPF_CNPJ              | 
+            | "0.000.000/0000-00"   | 
+            | "0.123.45"            | 
+            | "5.268.XBY/0012-00"   | 
  
 
-    
-    Cenário: Tentativa de login no chat Stelo com CPF / CNPJ inválido
-        Quando preenchido os campos "NOME / ESTABELECIMENTO", "CPF / CNPJ", "E-MAIL", "TELEFONE" com os devidos dados
-        E clicado em "ENTRAR NO CHAT"
-        Entao sera exibida as mensagens "Os campos identificados com asteriscos (*) sao de preenchimento obrigatorio." acima dos campos e "CPF/CNPJ inválido" abaixo do campo "CPF / CNPJ"
 
-        Exemplo de Cenário: Tentativa de login no chat Stelo sem preenchimento de campos obrigatórios
-            Quando preenchido com "<NOME / ESTABELECIMENTO>" no campo NOME / ESTABELECIMENTO, "<CPF / CNPJ>" no campo CPF / CNPJ, "<E-MAIL>" no campo E-MAIL, "<TELEFONE>" no campo TELEFONE
-            E clicado em "ENTRAR NO CHAT"
-            Entao sera exibida as mensagens "Os campos identificados com asteriscos (*) sao de preenchimento obrigatorio." acima dos campos e "CPF/CNPJ inválido" abaixo do campo "CPF / CNPJ"
-
+    Esquema do Cenário: Tentativa de login no chat Stelo com E-MAIL inválidos
+        Quando entrar com NOME "Lilian Almeida", CPF "012.345.678-90", E-MAIL <E-MAIL> e TELEFONE "(11)91234-5678"
+        Entao sera exibida as mensagens "Email inválido"
 
             Exemplos:
-            | NOME / ESTABELECIMENTO     | CPF / CNPJ              | E-MAIL                          | TELEFONE            |
-            | "Papelaria Lapis"          | "51.545.454/5111-1"     | "lapis@email.com"               | "(00) 00000-0000"   |
-            | "Roberto Oliveira"         | "000.000.000-00"        | "robertooliveira@email.com.br"  | "(12) 34567-8910"   | 
+            | E-MAIL                | 
+            | "bety@email.c"        | 
+            | "....e@email.com"     |
+            | "000@00.00"           |
 
 
-    Cenário: Tentativa de login no chat Stelo com E-MAIL inválidos
-        Quando preenchido os campos "NOME / ESTABELECIMENTO", "CPF / CNPJ", "E-MAIL", "TELEFONE" com os devidos dados
-        E clicado em "ENTRAR NO CHAT"
-        Entao sera exibida as mensagens "Os campos identificados com asteriscos (*) sao de preenchimento obrigatorio." acima dos campos e "Email inválido" abaixo do campo "E-MAIL"
-
-        Exemplo de Cenário: Tentativa de login no chat Stelo sem preenchimento de campos obrigatórios
-            Quando preenchido com "<NOME / ESTABELECIMENTO>" no campo NOME / ESTABELECIMENTO, "<CPF / CNPJ>" no campo CPF / CNPJ, "<E-MAIL>" no campo E-MAIL, "<TELEFONE>" no campo TELEFONE
-            E clicado em "ENTRAR NO CHAT"
-            Entao sera exibida as mensagens "Os campos identificados com asteriscos (*) sao de preenchimento obrigatorio." acima dos campos e "Email inválido" abaixo do campo "E-MAIL"
-
+    Esquema do Cenário: Tentativa de login no chat Stelo com TELEFONE inválidos
+        Quando entrar com NOME "Lilian Almeida", CPF "012.345.678-90", E-MAIL "lilian@email.com.br" e TELEFONE <TELEFONE>
+        Entao sera exibida as mensagens "Telefone inválido"
 
             Exemplos:
-            | NOME / ESTABELECIMENTO     | CPF / CNPJ              | E-MAIL                     | TELEFONE            |
-            | "Beatris Costa"            | "371.060.100-22"        | "bety@email.c"             | "(43)12578-5854"    |
-            | "Empresa Local ME"         | "24.726.769/0001-50"    | "....e@email.com"          | "(21)98145-4541"    |
-
-
-    Cenário: Tentativa de login no chat Stelo com TELEFONE inválidos
-        Quando preenchido os campos "NOME / ESTABELECIMENTO", "CPF / CNPJ", "E-MAIL", "TELEFONE" com os devidos dados
-        E clicado em "ENTRAR NO CHAT"
-        Entao sera exibida as mensagens "Os campos identificados com asteriscos (*) sao de preenchimento obrigatorio." acima dos campos e "Telefone inválido" abaixo do campo "TELEFONE"
-
-        Exemplo de Cenário: Tentativa de login no chat Stelo sem preenchimento de campos obrigatórios
-            Quando preenchido com "<NOME / ESTABELECIMENTO>" no campo NOME / ESTABELECIMENTO, "<CPF / CNPJ>" no campo CPF / CNPJ, "<E-MAIL>" no campo E-MAIL, "<TELEFONE>" no campo TELEFONE
-            E clicado em "ENTRAR NO CHAT"
-            Entao sera exibida as mensagens "Os campos identificados com asteriscos (*) sao de preenchimento obrigatorio." acima dos campos e "Telefone inválido" abaixo do campo "TELEFONE"
-
-
-            Exemplos:
-            | NOME / ESTABELECIMENTO     | CPF / CNPJ              | E-MAIL                     | TELEFONE            |
-            | "Henrique Amarantos"       | "706.871.712-88"        | "henrique@email.com"       | "(31) 44444-4"      |
-            | "Amelia Souza"             | "012.345.678-90"        | "amelia@email.com.br "     | "(12) 22"           |
+            | TELEFONE            |
+            | "(31) 44444-4"      |
+            | "(12) 22"           |
+            | "(00) QWERT-YUIO"   |

@@ -39,3 +39,67 @@ Cenário: Login com uma senha invalido
     Então exibida uma mensagem "Email ou senha inválidos" acima do botão "ENTRAR" em vermelho
 
     Exemplo:
+
+
+Funcionalidade: Alteração da "Lista de usuarios"
+
+Contexto: Estando Logado no sistema
+
+Cenário: Lista de usuários logado como AC
+    Quando clicado no menu "Sistema"
+    E clicado no submenu "Todos os Usuarios"
+    Então a lista de usuarios estara dividos nas colunas "Nome", "Sobrenome", "E-mail", "Funçao", "Unidade Relacionada", "situaçao"
+
+    Exemplo:
+
+Cenário: Lista de usuários logado como Regional
+    Quando clicado no menu "Sistema"
+    E clicado no submenu "Todos os Usuarios"
+    Então a lista de usuarios estara dividos nas colunas "Nome", "Sobrenome", "E-mail", "Funçao", "Unidade Relacionada", "situaçao"
+
+    Exemplo:
+
+Cenário: Lista de usuários logado como Comercial
+    Quando clicado no menu "Sistema"
+    E clicado no submenu "Todos os Usuarios"
+    Então a lista de usuarios estara dividos nas colunas "Nome", "Sobrenome", "E-mail", "Funçao", "Unidade Relacionada", "situaçao"
+
+    Exemplo:
+
+
+Funcionalidade: Alteração da "Lista de Comerciais"
+
+Contexto: Estando Logado no sistema em ambiente HMG
+
+Cenário: Lista de usuários logado como AC
+    Quando clicado no menu "Unidades"
+    E clicado no submenu "Comercial"
+    Então a lista de comerciais estara divididos nas colunas "Nome", "Regional Pertencente", "Situaçao", "Ação"
+
+    Evidencia:
+
+
+Funcionalidade: Alteração das colunas da pagina "Lista de Operações"
+
+Contexto: Estando Logado no sistema em ambiente HMG
+
+Cenário: Lista de usuários logado como AC
+    Quando clicado no menu "Unidades"
+    E clicado no submenu "Operação"
+    Então a lista de comerciais estara divididos nas colunas "Nome", "Regional Pertencente", "Comercial Pertencente", "Situaçao", "Ação"
+
+    Evidencia:
+
+Cenário: Lista de usuários logado como Regional
+    Quando clicado no menu "Unidades"
+    E clicado no submenu "Operação"
+    Então a lista de comerciais estara divididos nas colunas "Nome", "Regional Pertencente", "Comercial Pertencente", "Situaçao", "Ação"
+
+    Evidencia:
+
+Cenário: Lista de usuários logado como Comercial
+    Quando clicado no menu "Unidades"
+    E clicado no submenu "Operação"
+    Então a lista de comerciais estara divididos nas colunas "Nome", "Regional Pertencente", "Comercial Pertencente", "Situaçao", "Ação"
+
+    Evidencia:
