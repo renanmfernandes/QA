@@ -9,22 +9,26 @@ Contexto:
             E o credito e aprovado
             Entao o credito e liberado e avisado ao cliente
 
-    Cenario: Credito ao cliente reprovado
+    Cenario: Credito ao cliente negado
             Quando solicitado os dados ao cliente
             E os dados recebidos foram suficientes
-            E o credito nao e aprovado
+            E o credito e negado
             Entao e avisado o cliente
  
     Cenario: Credito ao cliente aprovado apos envio de mais dados
             Quando solicitado os dados ao cliente
-            E os dados recebidos não foram suficientes
+            E os dados recebidos são insuficientes
             Entao solicitar ao cliente enviar mais dados
-            E o processo de aprovacao foi concluido com sucesso
+            E os dados recebidos foram suficientes
+            E o credito e aprovado
             Entao o credito e liberado e avisado ao cliente
 
-    Cenario: Credito ao cliente reprovado apos envio de mais dados
+    Cenario: Credito ao cliente negado apos envio de mais dados
             Quando solicitado os dados ao cliente
-            E os dados recebidos não foram suficientes
+            E os dados recebidos são insuficientes
             Entao solicitar ao cliente enviar mais dados
+            E os dados recebidos foram suficientes
+            E o credito e negado
+            Entao e avisado o cliente
 
     
