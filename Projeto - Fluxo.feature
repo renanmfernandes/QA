@@ -2,18 +2,7 @@ Funcionalidade: Aprovação de credito a clientes
 
 Contexto:
     Dado que o usuario efetuou um pedido de credito
-
-    Esquema do Cenario: Credito ao cliente
-        Quando solicitado os dados ao cliente
-        E os dados recebidos foram suficientes
-        E o credito e <Resultado>
-        Entao o credito e <Veredito> o avisado ao cliente
-
-        Exemplos:
-        | "Resultado"     | "Veredito"    |
-        |  Aprovado       |  Liberado     |
-        |  Reprovado      |  Negado       |
-
+    
     Cenario: Credito ao cliente aprovado
         Quando solicitado os dados ao cliente
         E os dados recebidos foram suficientes
