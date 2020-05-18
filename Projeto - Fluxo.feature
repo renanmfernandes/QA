@@ -7,7 +7,7 @@ Contexto:
         Quando solicitado os dados ao cliente
         E os dados recebidos foram suficientes
         E o credito e <Resultado>
-        Entao o credito e <Veredito> o e avisado ao cliente
+        Entao o credito e <Veredito> o avisado ao cliente
 
         Exemplos:
         | "Resultado"     | "Veredito"    |
