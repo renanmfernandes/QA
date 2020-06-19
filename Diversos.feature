@@ -101,5 +101,3 @@ Cenário: Lista de usuários logado como Comercial
     Quando clicado no menu "Unidades"
     E clicado no submenu "Operação"
     Então a lista de comerciais estara divididos nas colunas "Nome", "Regional Pertencente", "Comercial Pertencente", "Situaçao", "Ação"
-
-    Evidencia:
