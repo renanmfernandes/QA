@@ -10,3 +10,5 @@ Cenario: Cadastro de um usuario com sucesso
     E preencher as informaçoes "Personal Information", "Sign-in Information"
     E clicar em "Create an Account"
     Entao sera retornada a mensagem "Thank you for registering with Main Website Store."
+
+Cenario: 
