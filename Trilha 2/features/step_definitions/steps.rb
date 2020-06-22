@@ -1,34 +1,47 @@
-# frozen_string_literal: true
+# Quando("clicar em {string}") do |_string|
+#   #   if criar == "Criar uma Conta"
+#   # find("a[href='https://magento.nublue.co.uk/customer/account/create/']").click
+#   click_link_or_button "Create"
+#   #   else
+#   #     find "#cadastrar".click
+#   #   end
+# end
 
-# #with ("clicar em {string}") do |var|
-##    if criar == "Criar uma Conta"
-##        find ("#criar_uma_conta").click
-##    else
-##        find ("#cadastrar").click
-## end
+# Quando("preencher as informaçoes {string}, {string}") do |_string, _string2|
+#   find("#firstname").set Faker::Name.first_name
+#   find("#lastname").set Faker::Name.last_name
+#   find("#is_subscribed").check
+#   find("#email_address").set Faker::Internet.email
+#   find("#password").set "Renan123456"
+#   find("#password-confirmation").set "Renan123456"
+#   find("button[class='action submit primary']").click
+# end
+
+# Entao("sera retornada a mensagem {string}") do |variavel|
+#   puts variavel
+#   elemento = find(".message-success").text
+#   expect(elemento).to eql variavel
+# end
 
 Dado("que estou na pagina home do site Luma") do
   visit "https://magento.nublue.co.uk/"
 end
 
-Quando("clicar em {string}") do |_string|
-  #   if criar == "Criar uma Conta"
-  find("a[href='https://magento.nublue.co.uk/customer/account/create/']").click
-  #   else
-  #     find "#cadastrar".click
-  #   end
+Quando("criar uma nova conta") do
+  click_link_or_button "Create"
 end
 
-Quando("preencher as informaçoes {string}, {string}") do |_string, _string2|
-  find("#firstname").set "Renan"
-  find("#lastname").set "Fernandes"
+Quando("preencher as informaçoes de acesso") do
+  find("#firstname").set Faker::Name.first_name
+  find("#lastname").set Faker::Name.last_name
   find("#is_subscribed").check
-  find("#email_address").set "teste@email.com.br"
+  find("#email_address").set Faker::Internet.email
   find("#password").set "Renan123456"
   find("#password-confirmation").set "Renan123456"
   find("button[class='action submit primary']").click
 end
 
-Entao("sera retornada a mensagem {string}") do |_string|
-  expect(find(".messages").text).to eql "Thank you for registering with Main Website Store."
+Entao("validado conta criada com sucesso") do
+  elemento = find(".message-success").text
+  expect(elemento).to eql "Thank you for registering with Main Website Store."
 end

@@ -7,10 +7,9 @@ Contexto:
 
 @cadastro
 Cenario: Cadastro de um usuario com sucesso
-    Quando clicar em "Create an Account"
-    E preencher as informaçoes "Personal Information", "Sign-in Information"
-    E clicar em "Create an Account"
-    Entao sera retornada a mensagem "Thank you for registering with Main Website Store."
+    Quando criar uma nova conta
+    E preencher as informaçoes de acesso
+    Entao validado conta criada com sucesso
 
 @pesquisa
 Cenario: Pesquisa por um produto com sucesso
