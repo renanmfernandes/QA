@@ -79,10 +79,11 @@ Quando("adicionar o produto carrinho") do
 end
 
 Quando("iniciar o checkout preenchendo com as informaçoes de endereço, metodo de envio, metodo de pagamento") do
-  find("#action primary checkout", text: "Proceed to Checkout").click
-  sleep 5
+  
+ 
 end
 
 Entao("sera efetuada a compra do produto pesquisado") do
-  pending # Write code here that turns the phrase above into concrete actions
+ 
+  
 end
