@@ -61,19 +61,26 @@ Entao("valido o nome do produto {string}") do |model|
 end
 
 Dado("que estou com um usuario autenticado no site") do
-  pending # Write code here that turns the phrase above into concrete actions
+  find(".authorization-link", text: "Sign In").click
+  find("#email").set "roni_cost@example.com"
+  find("#pass").set "roni_cost3@example.com"
+  find("#send2").click
 end
 
-Quando("pesquisar pelo produto SKU {string}") do |string|
-  pending # Write code here that turns the phrase above into concrete actions
+Quando("pesquisar pelo produto SKU {string}") do |sku|
+  find("#search").set sku
+  find("#search").native.send_keys(:enter)
+  click_link_or_button "Didi Sport Watch", match: :first
 end
 
 Quando("adicionar o produto carrinho") do
-  pending # Write code here that turns the phrase above into concrete actions
+  find("#product-addtocart-button").click
+  find(".message-success").click
 end
 
 Quando("iniciar o checkout preenchendo com as informaçoes de endereço, metodo de envio, metodo de pagamento") do
-  pending # Write code here that turns the phrase above into concrete actions
+  find("#action primary checkout", text: "Proceed to Checkout").click
+  sleep 5
 end
 
 Entao("sera efetuada a compra do produto pesquisado") do
