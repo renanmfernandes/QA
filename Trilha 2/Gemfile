@@ -3,6 +3,7 @@
 source 'https://rubygems.org'
 
 gem 'capybara'
+gem "cucumber", "~> 3.2.0"
 gem 'cpf_faker'
 gem 'faker'
 gem 'ffi'
