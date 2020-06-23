@@ -46,8 +46,8 @@ Entao("validado conta criada com sucesso") do
   expect(elemento).to eql "Thank you for registering with Main Website Store."
 end
 
-Quando("pesquisar pelo produto SKU {string} no campo de pesquisa") do |string|
-  find("#search").set "24-WG02"
+Quando("pesquisar pelo produto SKU {string} no campo de pesquisa") do |sku|
+  find("#search").set sku
   find("#search").native.send_keys(:enter)
 end
 
@@ -55,6 +55,7 @@ Quando("acessar a tela do produto pesquisado") do
   click_link_or_button "Didi Sport Watch", match: :first
 end
 
-Entao("valido o nome do produto {string}") do |string|
-  find(".base", text: "Didi Sport Watch")
+Entao("valido o nome do produto {string}") do |model|
+  product = find(".base").text
+  expect(product).to eql model
 end
