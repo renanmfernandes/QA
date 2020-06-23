@@ -70,7 +70,7 @@ end
 Quando("pesquisar pelo produto SKU {string}") do |sku|
   find("#search").set sku
   find("#search").native.send_keys(:enter)
-  click_link_or_button "Didi Sport Watch", match: :first
+  click_link_or_button "Fusion Backpack", match: :first
 end
 
 Quando("adicionar o produto carrinho") do
@@ -79,8 +79,10 @@ Quando("adicionar o produto carrinho") do
 end
 
 Quando("iniciar o checkout preenchendo com as informaçoes de endereço, metodo de envio, metodo de pagamento") do
-  
- 
+  sleep 3
+  click_button "Proceed to Checkout"
+  sleep 5
+  # find("#IJDWLRM")
 end
 
 Entao("sera efetuada a compra do produto pesquisado") do

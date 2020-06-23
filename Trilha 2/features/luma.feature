@@ -20,7 +20,7 @@ Cenario: Pesquisa por um produto com sucesso
 @pedido
 Cenario: Geral pedido
     Dado que estou com um usuario autenticado no site
-    Quando pesquisar pelo produto SKU "24-WG02"
+    Quando pesquisar pelo produto SKU "24-MB02"
     E adicionar o produto carrinho
     E iniciar o checkout preenchendo com as informaçoes de endereço, metodo de envio, metodo de pagamento
     Entao sera efetuada a compra do produto pesquisado
