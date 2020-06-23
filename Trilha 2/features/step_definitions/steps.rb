@@ -1,6 +1,6 @@
 # Quando("clicar em {string}") do |_string|
 #   #   if criar == "Criar uma Conta"
-#   # find("a[href='https://magento.nublue.co.uk/customer/account/create/']").click
+#   # find("a[href='https://magento.nublue.co.uk/didi-sport-watch.html']").click
 #   click_link_or_button "Create"
 #   #   else
 #   #     find "#cadastrar".click
@@ -44,4 +44,17 @@ end
 Entao("validado conta criada com sucesso") do
   elemento = find(".message-success").text
   expect(elemento).to eql "Thank you for registering with Main Website Store."
+end
+
+Quando("pesquisar pelo produto SKU {string} no campo de pesquisa") do |string|
+  find("#search").set "24-WG02"
+  find("#search").native.send_keys(:enter)
+end
+
+Quando("acessar a tela do produto pesquisado") do
+  click_link_or_button "Didi Sport Watch", match: :first
+end
+
+Entao("valido o nome do produto {string}") do |string|
+  find(".base", text: "Didi Sport Watch")
 end
