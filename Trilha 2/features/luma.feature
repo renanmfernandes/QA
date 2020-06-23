@@ -19,12 +19,12 @@ Cenario: Pesquisa por um produto com sucesso
 
 @pedido
 Cenario: Geral pedido
-  Dado que estou autenticado com o usuario "roni_cost@example.com" no site
-  Quando pesquisar pelo produto SKU "24-WG02"
-   E na tela do produto pesquisado clicar em "Add To Cart"
-   E sera retornada a mensagem "You added Didi Sport Watch to your shopping cart."
-  E ao acessar o carrinho clicar em "Proceed to checkout"
-   E preencher com as informaçoes de "Shipping Address", "Shipping Methods"
-   E preencher com as informaçoes de "Payment Method"
-   E clicar em "Place Order"
-   Entao sera retornada a mensagem "Thank you for your purchase!" e o numero de ordem "000000001"
+    Dado que estou autenticado com o usuario "roni_cost@example.com" no site
+    Quando pesquisar pelo produto SKU "24-WG02"
+    E na tela do produto pesquisado clicar em "Add To Cart"
+    E sera retornada a mensagem "You added Didi Sport Watch to your shopping cart."
+    E ao acessar o carrinho clicar em "Proceed to checkout"
+    E preencher com as informaçoes de "Shipping Address", "Shipping Methods"
+    E preencher com as informaçoes de "Payment Method"
+    E clicar em "Place Order"
+    Entao sera retornada a mensagem "Thank you for your purchase!" e o numero de ordem "000000001"
