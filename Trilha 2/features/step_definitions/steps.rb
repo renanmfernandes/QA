@@ -70,18 +70,19 @@ end
 Quando("pesquisar pelo produto SKU {string}") do |sku|
   find("#search").set sku
   find("#search").native.send_keys(:enter)
-  click_link_or_button "Fusion Backpack", match: :first
+  find(".product-item-link").click
 end
 
 Quando("adicionar o produto carrinho") do
   find("#product-addtocart-button").click
-  click_link "shopping cart", match: :first
+  sleep 2 #tratativa
+  find(".showcart").click
 end
 
 Quando("iniciar o checkout preenchendo com as informaçoes de endereço, metodo de envio, metodo de pagamento") do
-  sleep 3
-  click_button "Proceed to Checkout"
-  sleep 5
+  assert_selector("#top-cart-btn-checkout")
+  find("#top-cart-btn-checkout").click
+  assert_no_selector(".loader")
   # find("#IJDWLRM")
 end
 

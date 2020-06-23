@@ -25,6 +25,14 @@ Cenario: Geral pedido
     E iniciar o checkout preenchendo com as informaçoes de endereço, metodo de envio, metodo de pagamento
     Entao sera efetuada a compra do produto pesquisado
 
+
+# Cenario: Geral pedido
+#     Dado que estou com um usuario autenticado no site
+#     E pesquisar pelo produto SKU "24-MB02" e adicionar no carrinho
+#     Quando finalizar a compra 
+#     E preenchendo com as informaçoes de endereço, metodo de envio, metodo de pagamento
+#     Entao o pedido sera gerado com sucesso
+
 # Cenario: Geral pedido
 #     Dado que estou autenticado com o usuario "roni_cost@example.com" no site
 #     Quando pesquisar pelo produto SKU "24-WG02"
