@@ -59,3 +59,23 @@ Entao("valido o nome do produto {string}") do |model|
   product = find(".base").text
   expect(product).to eql model
 end
+
+Dado("que estou com um usuario autenticado no site") do
+  pending # Write code here that turns the phrase above into concrete actions
+end
+
+Quando("pesquisar pelo produto SKU {string}") do |string|
+  pending # Write code here that turns the phrase above into concrete actions
+end
+
+Quando("adicionar o produto carrinho") do
+  pending # Write code here that turns the phrase above into concrete actions
+end
+
+Quando("iniciar o checkout preenchendo com as informaçoes de endereço, metodo de envio, metodo de pagamento") do
+  pending # Write code here that turns the phrase above into concrete actions
+end
+
+Entao("sera efetuada a compra do produto pesquisado") do
+  pending # Write code here that turns the phrase above into concrete actions
+end
