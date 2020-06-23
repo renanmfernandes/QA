@@ -75,7 +75,7 @@ end
 
 Quando("adicionar o produto carrinho") do
   find("#product-addtocart-button").click
-  find(".message-success").click
+  click_link "shopping cart", match: :first
 end
 
 Quando("iniciar o checkout preenchendo com as informaçoes de endereço, metodo de envio, metodo de pagamento") do
