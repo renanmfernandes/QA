@@ -67,26 +67,25 @@ Dado("que estou com um usuario autenticado no site") do
   find("#send2").click
 end
 
-Quando("pesquisar pelo produto SKU {string}") do |sku|
+Dado("pesquisar pelo produto SKU {string} e adicionar no carrinho") do |sku|
   find("#search").set sku
   find("#search").native.send_keys(:enter)
   find(".product-item-link").click
-end
-
-Quando("adicionar o produto carrinho") do
   find("#product-addtocart-button").click
   sleep 2 #tratativa
-  find(".showcart").click
 end
 
-Quando("iniciar o checkout preenchendo com as informaçoes de endereço, metodo de envio, metodo de pagamento") do
+Quando("finalizar a compra") do
+  find(".showcart").click
   assert_selector("#top-cart-btn-checkout")
   find("#top-cart-btn-checkout").click
   assert_no_selector(".loader")
-  # find("#IJDWLRM")
 end
 
-Entao("sera efetuada a compra do produto pesquisado") do
- 
-  
+Quando("preenchendo com as informaçoes de endereço, metodo de envio, metodo de pagamento") do
+  pending # Write code here that turns the phrase above into concrete actions
+end
+
+Entao("o pedido sera gerado com sucesso") do
+  pending # Write code here that turns the phrase above into concrete actions
 end
