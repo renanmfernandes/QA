@@ -1,28 +1,3 @@
-# Quando("clicar em {string}") do |_string|
-#   #   if criar == "Criar uma Conta"
-#   # find("a[href='https://magento.nublue.co.uk/didi-sport-watch.html']").click
-#   click_link_or_button "Create"
-#   #   else
-#   #     find "#cadastrar".click
-#   #   end
-# end
-
-# Quando("preencher as informaçoes {string}, {string}") do |_string, _string2|
-#   find("#firstname").set Faker::Name.first_name
-#   find("#lastname").set Faker::Name.last_name
-#   find("#is_subscribed").check
-#   find("#email_address").set Faker::Internet.email
-#   find("#password").set "Renan123456"
-#   find("#password-confirmation").set "Renan123456"
-#   find("button[class='action submit primary']").click
-# end
-
-# Entao("sera retornada a mensagem {string}") do |variavel|
-#   puts variavel
-#   elemento = find(".message-success").text
-#   expect(elemento).to eql variavel
-# end
-
 Dado("que estou na pagina home do site Luma") do
   visit "https://magento.nublue.co.uk/"
 end
@@ -83,9 +58,29 @@ Quando("finalizar a compra") do
 end
 
 Quando("preenchendo com as informaçoes de endereço, metodo de envio, metodo de pagamento") do
-  pending # Write code here that turns the phrase above into concrete actions
+  verificar_endereço = has_css?("input[name='telephone']", wait: 2)
+    if verificar_endereço == true
+    find("input[name='company']").set "WebJump"
+    find("input[name='street[0]']").set "Fist"
+    find("input[name='street[1]']").set "125"
+    # find("input[name='street[2]']").set Faker::Address.
+    find("input[name='city']").set "Address city"
+    find("select[name='country_id'] option[value='US']").click
+    find("select[name='region_id'] option[value='13']").click
+    find("input[name='postcode']").set "80010"
+    find("input[name='telephone']").set "12345-6789"
+    sleep 5
+    end
+    first("input[class='radio']").click
+    find("button[data-role='opc-continue']").click
+    assert_no_selector(".loader")
+    find("button[class*='checkout']").click
+    assert_no_selector(".loader")
+    
 end
 
 Entao("o pedido sera gerado com sucesso") do
-  pending # Write code here that turns the phrase above into concrete actions
+  order = find(".base").text
+  expect(order).to eql "Thank you for your purchase!"
+  puts find(".order-number").text
 end
