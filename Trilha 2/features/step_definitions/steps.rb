@@ -63,7 +63,7 @@ Quando("preenchendo com as informaçoes de endereço, metodo de envio, metodo de
     find("input[name='company']").set "WebJump"
     find("input[name='street[0]']").set "Fist"
     find("input[name='street[1]']").set "125"
-    # find("input[name='street[2]']").set Faker::Address.
+    # find("input[name='street[2]']").set Faker::Address.neighborhood
     find("input[name='city']").set "Address city"
     find("select[name='country_id'] option[value='US']").click
     find("select[name='region_id'] option[value='13']").click
