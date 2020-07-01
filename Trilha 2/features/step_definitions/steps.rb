@@ -60,15 +60,15 @@ end
 Quando("preenchendo com as informaçoes de endereço, metodo de envio, metodo de pagamento") do
   verificar_endereço = has_css?("input[name='telephone']", wait: 2)
     if verificar_endereço == true
-    find("input[name='company']").set Faker::Company.name #"WebJump"
-    find("input[name='street[0]']").set Faker::Address.street_name #"Fist"
-    find("input[name='street[1]']").set Faker::Address.building_number #"125"
+    find("input[name='company']").set Faker::Company.name
+    find("input[name='street[0]']").set Faker::Address.street_name
+    find("input[name='street[1]']").set Faker::Address.building_number
     find("input[name='street[2]']").set Faker::Address.secondary_address
-    find("input[name='city']").set Faker::Address.city #"Address city"
+    find("input[name='city']").set Faker::Address.city
     find("select[name='country_id'] option[value='US']").click
     find("select[name='region_id'] option[value='13']").click
-    find("input[name='postcode']").set Faker::Address.postcode #"80010"
-    find("input[name='telephone']").set Faker::PhoneNumber.phone_number #"12345-6789"
+    find("input[name='postcode']").set Faker::Address.postcode
+    find("input[name='telephone']").set Faker::PhoneNumber.phone_number
     sleep 5
     end
     first("input[class='radio']").click
