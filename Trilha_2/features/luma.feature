@@ -1,5 +1,5 @@
 #language: pt
-@trilha2
+@trilha_2
 Funcionalidade: Cadastro de Usuario e Pedido de um produto
 
     Contexto: 
