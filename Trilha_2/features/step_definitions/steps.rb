@@ -11,8 +11,8 @@ Quando("preencher as informaçoes de acesso") do
   find("#lastname").set Faker::Name.last_name
   find("#is_subscribed").check
   find("#email_address").set Faker::Internet.email
-  find("#password").set "Renan123456"
-  find("#password-confirmation").set "Renan123456"
+  find("#password").set "Faker123456"
+  find("#password-confirmation").set "Faker123456"
   find("button[class='action submit primary']").click
 end
 
@@ -47,7 +47,7 @@ Dado("pesquisar pelo produto SKU {string} e adicionar no carrinho") do |sku|
   find("#search").native.send_keys(:enter)
   find(".product-item-link").click
   find("#product-addtocart-button").click
-  sleep 2 #tratativa
+  sleep 2
 end
 
 Quando("finalizar a compra") do
