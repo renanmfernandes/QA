@@ -65,10 +65,10 @@ Quando("preenchendo com as informaçoes de endereço, metodo de envio, metodo de
     find("input[name='street[1]']").set Faker::Address.building_number
     find("input[name='street[2]']").set Faker::Address.secondary_address
     find("input[name='city']").set Faker::Address.city
-    find("select[name='country_id'] option[value='US']").click
-    find("select[name='region_id'] option[value='13']").click
+    find("select[name='country_id'] option[value='BR']").click
+    find("select[name='region_id'] option[value='508']").click
     find("input[name='postcode']").set Faker::Address.postcode
-    find("input[name='telephone']").set Faker::PhoneNumber.phone_number
+    find("input[name='telephone']").set Faker::PhoneNumber.cell_phone
     sleep 5
     end
     first("input[class='radio']").click
