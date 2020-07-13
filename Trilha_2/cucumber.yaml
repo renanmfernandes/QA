@@ -1,5 +1,6 @@
 ---
-default: -p html -p bdd 
+default: -p html -p bdd -p json
 bdd: --format pretty
 dot: --format progress
-html:  --format html --out=log/report.html
+html: --format html --out=data/report.html
+json: --format json --out=data/report.json
