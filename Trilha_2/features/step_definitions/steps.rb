@@ -69,7 +69,7 @@ Quando("preenchendo com as informaçoes de endereço, metodo de envio, metodo de
     find("select[name='region_id'] option[value='508']").click
     find("input[name='postcode']").set Faker::Address.postcode
     find("input[name='telephone']").set Faker::PhoneNumber.cell_phone_with_country_code
-    sleep 5
+    assert_no_selector(".loader")
     end
     first("input[class='radio']").click
     find("button[data-role='opc-continue']").click

@@ -26,7 +26,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 21694
+              "duration": 17767
             }
           },
           {
@@ -35,7 +35,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 20345
+              "duration": 16236
             }
           }
         ],
@@ -49,15 +49,15 @@
             },
             "result": {
               "status": "passed",
-              "duration": 4546312140
+              "duration": 5763783944
             }
           }
         ]
       },
       {
-        "id": "cadastro-de-usuario-e-pedido-de-um-produto;geral-pedido",
+        "id": "cadastro-de-usuario-e-pedido-de-um-produto;gerar-pedido",
         "keyword": "Cenario",
-        "name": "Geral pedido",
+        "name": "Gerar pedido",
         "description": "",
         "line": 21,
         "type": "scenario",
@@ -81,7 +81,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2370704041
+              "duration": 2276381360
             }
           },
           {
@@ -93,7 +93,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 6850069995
+              "duration": 6511635541
             }
           },
           {
@@ -105,7 +105,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 4713516589
+              "duration": 5663217452
             }
           },
           {
@@ -117,7 +117,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 7617168593
+              "duration": 7543547677
             }
           },
           {
@@ -128,11 +128,11 @@
               "000000002"
             ],
             "match": {
-              "location": "features/step_definitions/steps.rb:82"
+              "location": "features/step_definitions/steps.rb:83"
             },
             "result": {
               "status": "passed",
-              "duration": 222837917
+              "duration": 210933866
             }
           }
         ],
@@ -149,7 +149,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 145759725
+              "duration": 104570768
             }
           },
           {
@@ -158,7 +158,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 42364856
+              "duration": 35709133
             }
           }
         ]

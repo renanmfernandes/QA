@@ -18,7 +18,7 @@ Funcionalidade: Cadastro de Usuario e Pedido de um produto
         Entao valido o nome do produto "Didi Sport Watch"
 
     @pedido
-    Cenario: Geral pedido
+    Cenario: Gerar pedido
         Dado que estou com um usuario autenticado no site
         E pesquisar pelo produto SKU "24-MB02" e adicionar no carrinho
         Quando finalizar a compra 
