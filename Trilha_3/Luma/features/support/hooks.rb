@@ -7,9 +7,9 @@ After do |scenario|
     file_shot = File.open(temp_shot, "rb").read
     final_shot = Base64.encode64(file_shot)
     embed(temp_shot, "image/png", "Clique aqui para ver a evidência!")
-  end
+end
   
-  at_exit do
+at_exit do
     time = Time.now
     data = time.strftime("%d/%m/%Y") #=> "Data 04/09/2011"
     hora = time.strftime("at %I:%M%p") #=> "08:56AM"
@@ -23,9 +23,9 @@ After do |scenario|
       config.compress_images = true
       config.additional_info = { "Projeto" => "Academia - Trilha 3 - Luma", "Data de execução" => "#{data}" " #{hora}", "QA" => "Renan Fernandes" }
     end
-    ReportBuilder.build_report
-  end
+  ReportBuilder.build_report
+end
 
 Before do
-    @pedido = Pedido.new
+  @pedido = Pedido.new
 end
