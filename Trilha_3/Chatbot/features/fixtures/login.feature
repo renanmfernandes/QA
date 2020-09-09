@@ -5,7 +5,6 @@ Funcionalidade: Login no chat da Stelo
   Contexto:
     Dado que o usuario esta na pagina de login do chat da Stelo
 
-    @login01
     Cenario: Login no chat da Stelo com credencias de pessoa fisica
             Quando entrar com NOME "Pedro Almeida", CPF_CNPJ "012.345.678-90", E-MAIL "lilian@email.com.br" e TELEFONE "(11)91234-5678"
             Entao visualizo a mensagem de saudacao do assistente virtual
