@@ -1,0 +1,7 @@
+# Formulario de Login
+login_campo_nome:     "#vinter-loginForm-nome"
+login_campo_cpfcnpj:  "#vinter-loginForm-cpfCnpj"
+login_campo_email:    "#vinter-loginForm-email"
+login_campo_telefone: "#vinter-loginForm-telefone"
+login_btn_entrar:     "#vinter-btnSend"
+login_msg_erro:       "#vinter-errorMsg-item"
