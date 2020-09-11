@@ -38,6 +38,7 @@ GEM
     faker (2.13.0)
       i18n (>= 1.6, < 2)
     ffi (1.13.1)
+    ffi (1.13.1-x64-mingw32)
     gherkin (5.1.0)
     i18n (1.8.5)
       concurrent-ruby (~> 1.0)
@@ -78,6 +79,7 @@ GEM
 
 PLATFORMS
   ruby
+  x64-mingw32
 
 DEPENDENCIES
   capybara
