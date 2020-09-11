@@ -27,5 +27,7 @@ at_exit do
 end
 
 Before do
-  @pedido = Pedido.new
+  @cadastro = Cadastro.new
+  @busca = Busca.new
+  @e2e = E2e.new
 end

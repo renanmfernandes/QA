@@ -1,0 +1,17 @@
+# Acessar site
+Luma: "https://magento.nublue.co.uk/"
+
+# Criar conta
+luma_bnt_criar:         "a[href='https://magento.nublue.co.uk/customer/account/create/']"
+luma_primeiro_nome:     "#firstname"
+luma_segundo_nome:      "#lastname"
+luma_inscrever:         "#is_subscribed"
+luma_email_cadastro:    "#email_address"
+luma_senha_cadastro:    "#password"
+luma_senha_confirmacao: "#password-confirmation"
+luma_btn_confirmacao:   "button[class='action submit primary']"
+
+#Busca
+luma_pesquisa: "#search"
+
+#e2e
