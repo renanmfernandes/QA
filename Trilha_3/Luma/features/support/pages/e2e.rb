@@ -39,11 +39,11 @@ class E2e
     def finalizar_pedido
         find(EL["luma_btn_show_carrinho"]).click
         find(EL["luma_btn_checkout_1"]).click
-        assert_no_selector(".loader")
+        assert_no_selector(EL[".loader"])
     end
 
     def preencher_pedido
-        verificar_endereço = has_css?("input[name='telephone']", wait: 2)
+        verificar_endereço = has_css?(EL["luma_campo_telefone"], wait: 2)
         if verificar_endereço == true
             find(EL["luma_campo_nome"]).set @nome_companhia
             find(EL["luma_campo_rua_nome_1"]).set @rua
@@ -54,13 +54,13 @@ class E2e
             find(EL["luma_campo_estado"]).click
             find(EL["luma_campo_cep"]).set @cep
             find(EL["luma_campo_telefone"]).set @telefone
-            assert_no_selector(".loader")  
+            assert_no_selector(EL[".loader"])  
         end
             find(EL["luma_btn_radio"]).click
             find(EL["luma_btn_continue"]).click
-            assert_no_selector(".loader")
+            assert_no_selector(EL[".loader"])
             find(EL["luma_btn_checkout_2"]).click
-            assert_no_selector(".loader")
+            assert_no_selector(EL[".loader"])
     end
 
     def confirmacao_pedido
@@ -68,5 +68,5 @@ class E2e
         expect(order).to eql "Thank you for your purchase!"
         puts find(".order-number").text
     end
-    
+
 end 
