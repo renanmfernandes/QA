@@ -14,6 +14,7 @@ luma_mensagem_base:      ".base"
 
 #Busca
 luma_pesquisa:           "#search"
+luma_loader:             ".loader"
 
 #e2e
 luma_email:              "#email"
@@ -36,5 +37,5 @@ luma_campo_telefone:     "input[name='telephone']"
 luma_btn_radio:          "input[class='radio']"
 luma_btn_continue:       "button[data-role='opc-continue']"
 luma_btn_checkout_2:     "button[class*='checkout']"
-luma_loader:             ".loader"
 luma_numero_ordem:       ".order-number"
+# luma_loader_checkout:    "#checkout-loader"

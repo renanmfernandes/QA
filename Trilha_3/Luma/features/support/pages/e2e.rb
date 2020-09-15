@@ -54,7 +54,7 @@ class E2e
             find(EL["luma_campo_estado"]).click
             find(EL["luma_campo_cep"]).set @cep
             find(EL["luma_campo_telefone"]).set @telefone
-            assert_no_selector(EL["luma_loader"])  
+            assert_no_selector(EL["luma_loader"])
         end
             first(EL["luma_btn_radio"]).click
             find(EL["luma_btn_continue"]).click
