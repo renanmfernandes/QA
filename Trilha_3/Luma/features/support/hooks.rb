@@ -1,7 +1,3 @@
-Before do
-    @login = Login.new
-end
-
 After do |scenario|
     Dir.mkdir("data") unless Dir.exist?("data")
     sufix = ("error" if scenario.failed?) || "success"
@@ -11,9 +7,9 @@ After do |scenario|
     file_shot = File.open(temp_shot, "rb").read
     final_shot = Base64.encode64(file_shot)
     embed(temp_shot, "image/png", "Clique aqui para ver a evidência!")
-  end
+end
   
-  at_exit do
+at_exit do
     time = Time.now
     data = time.strftime("%d/%m/%Y") #=> "Data 04/09/2011"
     hora = time.strftime("at %I:%M%p") #=> "08:56AM"
@@ -25,7 +21,18 @@ After do |scenario|
       config.report_tabs = %w[Overview Features Scenarios Errors]
       config.report_title = "Automação de Testes - Report"
       config.compress_images = true
-      config.additional_info = { "Projeto" => "Academia - Trilha 3 - Chatbot", "Data de execução" => "#{data}" " #{hora}", "QA" => "Renan Fernandes" }
+      config.additional_info = { "Projeto" => "Academia - Trilha 3 - Luma", "Data de execução" => "#{data}" " #{hora}", "QA" => "Renan Fernandes" }
     end
-    ReportBuilder.build_report
-  end
+  ReportBuilder.build_report
+end
+
+Before do
+  @cadastro = Cadastro.new
+  @busca = Busca.new
+  @produto = Produto.new
+  @checkout = Checkout.new
+  @pedido_gerado = Pedido_gerado.new
+  @painel_cliente = Painel_cliente.new
+  @login = Login.new
+  
+end
