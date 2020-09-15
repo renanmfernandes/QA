@@ -1,5 +1,5 @@
 #language: pt
-@pedido
+@luma
 Funcionalidade: Cadastro de Usuario e Pedido de um produto
 
     Contexto: 

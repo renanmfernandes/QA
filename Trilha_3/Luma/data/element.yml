@@ -10,6 +10,7 @@ luma_email_cadastro:     "#email_address"
 luma_senha_cadastro:     "#password"
 luma_senha_confirmacao:  "#password-confirmation"
 luma_btn_confirmacao:    "button[class='action submit primary']"
+luma_mensagem_base:      ".base"
 
 #Busca
 luma_pesquisa:           "#search"
@@ -36,3 +37,4 @@ luma_btn_radio:          "input[class='radio']"
 luma_btn_continue:       "button[data-role='opc-continue']"
 luma_btn_checkout_2:     "button[class*='checkout']"
 luma_loader:             ".loader"
+luma_numero_ordem:       ".order-number"

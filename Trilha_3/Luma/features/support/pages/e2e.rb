@@ -39,7 +39,7 @@ class E2e
     def finalizar_pedido
         find(EL["luma_btn_show_carrinho"]).click
         find(EL["luma_btn_checkout_1"]).click
-        assert_no_selector(EL[".loader"])
+        assert_no_selector(EL["luma_loader"])
     end
 
     def preencher_pedido
@@ -54,19 +54,19 @@ class E2e
             find(EL["luma_campo_estado"]).click
             find(EL["luma_campo_cep"]).set @cep
             find(EL["luma_campo_telefone"]).set @telefone
-            assert_no_selector(EL[".loader"])  
+            assert_no_selector(EL["luma_loader"])  
         end
-            find(EL["luma_btn_radio"]).click
+            first(EL["luma_btn_radio"]).click
             find(EL["luma_btn_continue"]).click
-            assert_no_selector(EL[".loader"])
+            assert_no_selector(EL["luma_loader"])
             find(EL["luma_btn_checkout_2"]).click
-            assert_no_selector(EL[".loader"])
+            assert_no_selector(EL["luma_loader"])
     end
 
     def confirmacao_pedido
-        order = find(".base").text
+        order = find(EL["luma_mensagem_base"]).text
         expect(order).to eql "Thank you for your purchase!"
-        puts find(".order-number").text
+        puts find(EL["luma_numero_ordem"]).text
     end
 
 end 

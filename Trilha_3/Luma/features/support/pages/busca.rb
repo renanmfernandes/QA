@@ -9,10 +9,11 @@ class Busca
 
     def clicar_produto
         click_link_or_button "Didi Sport Watch", match: :first
+        assert_no_selector(EL["luma_loader"])
     end
 
     def verificar_busca(model)
-        product = find(".base").text
+        product = find(EL["luma_mensagem_base"]).text
         expect(product).to eql model
     end
 end 
