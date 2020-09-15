@@ -1,5 +1,5 @@
   Quando("pesquisar pelo produto SKU {string} no campo de pesquisa") do |sku|
-    @busca.busca(sku)
+    @busca.busca_produto(sku)
   end
   
   Quando("acessar a tela do produto pesquisado") do

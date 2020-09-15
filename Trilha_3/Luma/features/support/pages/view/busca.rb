@@ -2,7 +2,7 @@ class Busca
     include Capybara::DSL
     include RSpec::Matchers
 
-    def busca(sku)
+    def busca_produto(sku)
         find(EL["luma_pesquisa"]).set (sku)
         find(EL["luma_pesquisa"]).send_keys :enter
     end
@@ -16,4 +16,5 @@ class Busca
         product = find(EL["luma_mensagem_base"]).text
         expect(product).to eql model
     end
+
 end 

@@ -11,5 +11,5 @@ Dado("que estou na pagina home do site {string}") do |site|
     end
     
     Entao("validado conta criada com sucesso") do
-      @cadastro.verificar_mensagem
+      @painel_cliente.verificar_mensagem
     end

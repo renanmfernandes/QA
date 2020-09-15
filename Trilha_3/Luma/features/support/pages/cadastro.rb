@@ -28,9 +28,5 @@ class Cadastro
         find(EL["luma_btn_confirmacao"]).click
     end
 
-    def verificar_mensagem
-        elemento = find(".message-success").text
-    expect(elemento).to eql "Thank you for registering with Main Website Store."
-    end
 end
 

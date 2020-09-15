@@ -1,5 +1,5 @@
 #language: pt
-@luma
+@e2e
 Funcionalidade: Cadastro de Usuario e Pedido de um produto
 
     Contexto: 
@@ -17,7 +17,7 @@ Funcionalidade: Cadastro de Usuario e Pedido de um produto
         E acessar a tela do produto pesquisado
         Entao valido o nome do produto "Didi Sport Watch"
 
-    @e2e
+    @pedido
     Cenario: Gerar pedido
         Dado que estou com um usuario autenticado no site
         E pesquisar pelo produto SKU "24-MB02" e adicionar no carrinho

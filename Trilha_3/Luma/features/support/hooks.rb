@@ -29,5 +29,10 @@ end
 Before do
   @cadastro = Cadastro.new
   @busca = Busca.new
-  @e2e = E2e.new
+  @produto = Produto.new
+  @checkout = Checkout.new
+  @pedido_gerado = Pedido_gerado.new
+  @painel_cliente = Painel_cliente.new
+  @login = Login.new
+  
 end

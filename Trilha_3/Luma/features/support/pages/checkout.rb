@@ -1,4 +1,4 @@
-class E2e
+class Checkout
     include Capybara::DSL
     include RSpec::Matchers
 
@@ -10,30 +10,7 @@ class E2e
         @cidade=Faker::Address.city
         @cep=Faker::Address.postcode
         @telefone=Faker::PhoneNumber.cell_phone_with_country_code
-        @email="roni_cost@example.com"
-        @senha="roni_cost3@example.com"
-    end
 
-    def acessa_site(site)
-        visit(EL[site])
-    end
-
-    def login_luma
-        find(EL["luma_btn_singin"]).click
-        find(EL["luma_email"]).set @email
-        find(EL["luma_senha"]).set @senha
-        find(EL["luma_btn_login"]).click
-    end
-
-    def busca_produto(sku)
-        find(EL["luma_pesquisa"]).set (sku)
-        find(EL["luma_pesquisa"]).send_keys :enter
-    end
-
-    def add_carrinho
-        find(EL["luma_btn_produto"]).click
-        find(EL["luna_btn_add_carinho"]).click
-        sleep 2
     end
 
     def finalizar_pedido
@@ -42,7 +19,7 @@ class E2e
         assert_no_selector(EL["luma_loader"])
     end
 
-    def preencher_pedido
+    def preencher_informacoes_checkout
         verificar_endereço = has_css?(EL["luma_campo_telefone"], wait: 2)
         if verificar_endereço == true
             find(EL["luma_campo_nome"]).set @nome_companhia
@@ -63,10 +40,4 @@ class E2e
             assert_no_selector(EL["luma_loader"])
     end
 
-    def confirmacao_pedido
-        order = find(EL["luma_mensagem_base"]).text
-        expect(order).to eql "Thank you for your purchase!"
-        puts find(EL["luma_numero_ordem"]).text
-    end
-
-end 
+end
