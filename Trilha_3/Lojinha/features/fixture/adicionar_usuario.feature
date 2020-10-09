@@ -1,5 +1,5 @@
 #language: pt
-@criar_usuario
+@adicionar_usuario
 Funcionalidade: Criar usuario na API da Lojinha
 
     Contexto:

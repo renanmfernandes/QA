@@ -4,8 +4,8 @@ Dado("que estou na requisição {string}") do |url|
   
   Quando("faco a requisicao com os dados {string}, {string} e {string}") do |nome, login, senha|
     @body=  {
-            "usuarionome": "Renan Silva",
-            "usuariologin": "renan.silva",
+            "usuarionome": "Renan Souza",
+            "usuariologin": "renan.souza",
             "usuariosenha": "123456"
             }.to_json
     @response = HTTParty.post @url, :body => @body, :headers => { "Content-Type" => "application/json" }
