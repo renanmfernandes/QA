@@ -1,14 +1,16 @@
-Dado("que estou na requisição {string}") do |url|
-    @url = "http://165.227.93.41/lojinha/usuario"
+Dado("que estou na API lojinha") do
+    @adicionar_usuario = "http://165.227.93.41/lojinha/usuario"
+    @login = "http://165.227.93.41/lojinha/login"
+    @produto = "http://165.227.93.41/lojinha/produto"
   end
   
   Quando("faco a requisicao com os dados {string}, {string} e {string}") do |nome, login, senha|
     @body=  {
-            "usuarionome": "Renan Souza",
-            "usuariologin": "renan.souza",
+            "usuarionome": "Renan Simoes",
+            "usuariologin": "renan.simoes",
             "usuariosenha": "123456"
             }.to_json
-    @response = HTTParty.post @url, :body => @body, :headers => { "Content-Type" => "application/json" }
+    @response = HTTParty.post @adicionar_usuario, :body => @body, :headers => { "Content-Type" => "application/json" }
   end
   
   Entao("e retornado a resposta {string}") do |status_code|
