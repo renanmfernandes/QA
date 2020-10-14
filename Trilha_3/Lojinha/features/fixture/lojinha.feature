@@ -27,7 +27,7 @@ Funcionalidade: Criar usuario na API da Lojinha
     @buscar_produtos
      Cenario: Validar API GET - Buscar produtos
         Quando estou autenticado na API
-        E faco a requisicao com os dados do produto
+        E faco a requisicao pela lista de produtos
         Entao e retornado a resposta "200"
         E valido a mensagem "Listagem de produtos realizada com sucesso"
 
