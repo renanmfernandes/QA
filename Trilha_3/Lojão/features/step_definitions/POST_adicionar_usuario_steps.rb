@@ -1,13 +1,11 @@
 Dado("que estou na API lojinha") do
-    @adicionar_usuario = "http://165.227.93.41/lojinha/usuario"
-    @login = "http://165.227.93.41/lojinha/login"
-    @produto = "http://165.227.93.41/lojinha/produto"
+    usuario.post_adicionar_usuario
   end
   
   Quando("faco a requisicao com os dados {string}, {string} e {string}") do |nome, login, senha|
     @body=  {
-            "usuarionome": "Renan Carlos",
-            "usuariologin": "renan.carlos",
+            "usuarionome": "Renan Silva",
+            "usuariologin": "renan.silva",
             "usuariosenha": "123456"
             }.to_json
     @response = HTTParty.post @adicionar_usuario, :body => @body, :headers => { "Content-Type" => "application/json" }
