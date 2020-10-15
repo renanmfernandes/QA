@@ -1,14 +1,14 @@
 Dado("que estou na API lojinha") do
-    usuario.post_adicionar_usuario
+    # @adicionar_usuario = usuario.post_adicionar_usuario
   end
   
   Quando("faco a requisicao com os dados {string}, {string} e {string}") do |nome, login, senha|
     @body=  {
-            "usuarionome": "Renan Silva",
-            "usuariologin": "renan.silva",
+            "usuarionome": "Renan Lucas",
+            "usuariologin": "renan.lucas",
             "usuariosenha": "123456"
             }.to_json
-    @response = HTTParty.post @adicionar_usuario, :body => @body, :headers => { "Content-Type" => "application/json" }
+    @response = HTTParty.post usuario.post_adicionar_usuario, :body => @body
   end
   
   Entao("e retornado a resposta {string}") do |status_code|
