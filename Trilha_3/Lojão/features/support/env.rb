@@ -34,6 +34,6 @@ World(REST)
       config.default_max_wait_time = 5
     end
   
-CONFIG = YAML.load_file("./data/element.yml")
+EL = YAML.load_file("./data/element.yml")
   
 #   EL = YAML.load_file(File.join(Dir.pwd, "/data/element.yml"))

@@ -1,9 +1,5 @@
-Quando("faco a requisicao com os dados {string} e {string}") do |login, senha|
-    @body=  {
-            "usuariologin": "renan.fernandes",
-            "usuariosenha": "123456"
-             }.to_json
-    @response = HTTParty.post @login, :body => @body, :headers => { "Content-Type" => "application/json" }
+Quando("faco a requisicao com os dados {string} e {string}") do |user, senha|
+    @response = login.post_fazer_login
   end
   
 Entao("e retornado a resposta {string} e o {string} de autenticacao") do |status_code, token|

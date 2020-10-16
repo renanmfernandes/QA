@@ -1,10 +1,6 @@
 Quando("estou autenticado na API") do
-    @body=  {
-        "usuariologin": "renan.fernandes",
-        "usuariosenha": "123456"
-         }.to_json
-@response = HTTParty.post @login, :body => @body, :headers => { "Content-Type" => "application/json" }
-         @token = @response.parsed_response["data"]["token"]
+        @response = login.post_fazer_login
+        @token = @response.parsed_response["data"]["token"]
     end
   
   Quando("faco a requisicao com os dados do produto") do

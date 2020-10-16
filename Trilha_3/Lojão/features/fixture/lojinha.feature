@@ -2,9 +2,6 @@
 @e3e
 Funcionalidade: Criar usuario na API da Lojinha
 
-    Contexto:
-        Dado que estou na API lojinha
-
     @adicionar_usuario
     Cenario: Validar API POST - Adicionar novo usuario
         Quando faco a requisicao com os dados "nome", "login" e "senha"

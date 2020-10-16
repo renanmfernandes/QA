@@ -1,18 +1,21 @@
-# class Produto
-#         include HTTParty
-        
-#         headers "Content-Type" => "application/json"
-#         base_uri CONFIG["http://165.227.93.41/lojinha"]
+module Rest
 
-#         def post_produto
-#             self.class.post("/produto")
-#         end
+    class Produto
+        include HTTParty
+            
+        headers "Content-Type" => "application/json"
+        base_uri EL["base_uri"]
 
-#         def get_buscar_produto
-#             self.class.get("/produto/")
-#         end
+        def post_produto
+            self.class.post("/produto")
+        end
 
-#         def get_buscar_produto(id)
-#             self.class.get("/produto/#{id}")
-#         end
-# end
+        def get_buscar_produtos
+            self.class.get("/produto")
+        end
+
+        def get_buscar_produto(id)
+            self.class.get("/produto/#{id}")
+        end
+    end
+end
