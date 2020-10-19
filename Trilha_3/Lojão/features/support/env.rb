@@ -6,10 +6,10 @@ require "cpf_faker"
 require "report_builder"
 require "rspec"
 require "httparty"
+require "httparty/request"
+require "httparty/response/headers"
 require_relative "spec_helper/spec_rest"
 World(REST)
-# require "httparty/request"
-# require "httparty/response/headers"
 
 # when "chrome"
 #     @driver = :selenium_chrome
