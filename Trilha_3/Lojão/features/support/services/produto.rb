@@ -2,8 +2,8 @@ module Rest
 
     class Produto
         include HTTParty
-            
-        headers "Content-Type" => "application/json"
+
+        headers "Content-Type" => "application/json" 
         base_uri EL["base_uri"]
 
         def post_produto

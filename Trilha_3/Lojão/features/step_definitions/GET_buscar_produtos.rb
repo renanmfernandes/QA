@@ -1,3 +1,4 @@
 Quando("faco a requisicao pela lista de produtos") do
-  @result = produto.get_buscar_produtos
+  @response = produto.get_buscar_produtos
+  puts @response.body
 end
