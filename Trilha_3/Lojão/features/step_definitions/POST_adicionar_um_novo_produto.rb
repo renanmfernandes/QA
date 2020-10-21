@@ -1,6 +1,4 @@
-Quando("estou autenticado na API") do
-  @response = login.post_fazer_login
-  @token = @response.parsed_response["data"]["token"]
+Quando("estou autenticado na API") do 
 end
 
 Quando("faco a requisicao com os dados do produto") do

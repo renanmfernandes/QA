@@ -6,20 +6,25 @@ module Rest
     headers "Content-Type" => "application/json"
     base_uri EL["base_uri"]
 
+    def initialize
+      @login = Login.new
+      @token = @login.gerar_token
+    end
+
     def post_adicionar_produto
-      self.class.post("/produto", :body => gerar_dados_produto)
+      self.class.post("/produto", :body => gerar_dados_produto, :headers => {"token" => "#{@token}"})
     end
 
     def get_buscar_produtos
-      self.class.get("/produto")
+      self.class.get("/produto", :headers => {"token" => "#{@token}"})
     end
 
     def get_buscar_produto(id)
-      self.class.get("/produto/#{id}")
+      self.class.get("/produto/#{id}", :headers => {"token" => "#{@token}"})
     end
 
     def gerar_dados_produto
-      body = {
+      return body = {
         "produtonome": "Nintendo Wii",
         "produtovalor": 1599.00,
         "produtocores": [
