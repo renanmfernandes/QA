@@ -1,20 +1,8 @@
 #language: pt
-@e3e
-Funcionalidade: Criar usuario na API da Lojinha
+@e2e_produto
+Funcionalidade: Gestao de produto na API da Lojinha
 
-    @adicionar_usuario
-    Cenario: Validar API POST - Adicionar novo usuario
-        Quando faco a requisicao com os dados "nome", "login" e "senha"
-        Entao e retornado a resposta "201"
-        E valido a mensagem "Usuário adicionado com sucesso" 
-
-    @fazer_login
-     Cenario: Validar API POST - Fazer login
-        Quando faco a requisicao com os dados "login" e "senha"
-        Entao e retornado a resposta "200" e o "token" de autenticacao
-        E valido a mensagem "Sucesso ao realizar o login"
-
-    @cadastrar_produto
+     @cadastrar_produto
      Cenario: Validar API POST - Adicionar um novo produto
         Quando estou autenticado na API
         E faco a requisicao com os dados do produto
