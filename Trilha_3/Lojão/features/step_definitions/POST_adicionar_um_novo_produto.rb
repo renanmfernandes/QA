@@ -4,24 +4,6 @@ Quando("estou autenticado na API") do
 end
 
 Quando("faco a requisicao com os dados do produto") do
-  @body = {
-    "produtonome": "Nintendo Wii",
-    "produtovalor": 1599.00,
-    "produtocores": [
-      "Preto",
-      "branco",
-    ],
-    "componentes": [
-      {
-        "componentenome": "Controle Nintendo Wii",
-        "componentequantidade": 2,
-      },
-      {
-        "componentenome": "Cabo de força Nintendo Wii",
-        "componentequantidade": 1,
-      },
-    ],
-  }.to_json
-  @response = HTTParty.post @produto, :body => @body, :headers => { "token" => "#{@token}", "Content-Type" => "application/json" }
+  @response = produto.post_adicionar_produto
   puts @response.body
 end
