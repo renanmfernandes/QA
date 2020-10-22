@@ -32,4 +32,4 @@ Funcionalidade: Gestao de produto na API da Lojinha
    @apagar_produto
      Cenario: Validar API DELETE - Apagar produto
         Quando faco a requisicao com o "ID" do produto a ser deletado
-        Entao e retornado a resposta "204"
+        Entao valido a exclusao no retorno da resposta "204"
