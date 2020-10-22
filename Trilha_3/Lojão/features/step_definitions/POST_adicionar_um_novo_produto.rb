@@ -1,4 +1,4 @@
-Quando("estou autenticado na API") do 
+Dado("que estou autenticado na API") do
 end
 
 Quando("faco a requisicao com os dados do produto") do
