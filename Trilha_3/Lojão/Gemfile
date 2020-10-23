@@ -12,3 +12,4 @@ gem 'rspec'
 gem 'rufo'
 gem 'selenium-webdriver'
 gem 'httparty'
+gem 'solargraph', group: :development
