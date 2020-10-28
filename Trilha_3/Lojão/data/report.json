@@ -1,0 +1,109 @@
+[
+  {
+    "uri": "features/fixture/login_usuario.feature",
+    "id": "gestao-de-usuario-e-fazer-login-na-api-da-lojinha",
+    "keyword": "Funcionalidade",
+    "name": "Gestao de usuario e fazer login na API da Lojinha",
+    "description": "",
+    "line": 3,
+    "tags": [
+      {
+        "name": "@e2e_login_usuario",
+        "line": 2
+      }
+    ],
+    "elements": [
+      {
+        "id": "gestao-de-usuario-e-fazer-login-na-api-da-lojinha;validar-api-post---fazer-login",
+        "keyword": "Cenario",
+        "name": "Validar API POST - Fazer login",
+        "description": "",
+        "line": 12,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@e2e_login_usuario",
+            "line": 2
+          },
+          {
+            "name": "@fazer_login",
+            "line": 11
+          }
+        ],
+        "before": [
+          {
+            "match": {
+              "location": "capybara-3.33.0/lib/capybara/cucumber.rb:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 29363
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.33.0/lib/capybara/cucumber.rb:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 23283
+            }
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Quando ",
+            "name": "faco a requisicao com os dados \"login\" e \"senha\"",
+            "line": 13,
+            "match": {
+              "location": "features/step_definitions/POST_fazer_login_steps.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 519533334
+            }
+          },
+          {
+            "keyword": "Entao ",
+            "name": "e retornado a resposta \"200\" e o \"token\" de autenticacao",
+            "line": 14,
+            "output": [
+              "Sucesso ao realizar o login",
+              "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c3VhcmlvaWQiOiIxNDMyIiwidXN1YXJpb2xvZ2luIjoicmVuYW4uZmVybmFuZGVzIiwidXN1YXJpb25vbWUiOiJSZW5hbiBGZXJuYW5kZXMifQ.TZeApF_5bDi5jkbeRE3lzrMVT57PTollvBFwu_z6Ia0"
+            ],
+            "match": {
+              "location": "features/step_definitions/POST_fazer_login_steps.rb:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1865777
+            }
+          },
+          {
+            "keyword": "E ",
+            "name": "valido a mensagem \"Sucesso ao realizar o login\"",
+            "line": 15,
+            "match": {
+              "location": "features/step_definitions/POST_adicionar_usuario_steps.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 122282
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "capybara-3.33.0/lib/capybara/cucumber.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 40070
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
