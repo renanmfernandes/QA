@@ -26,9 +26,9 @@ else
 end
 
 Capybara.configure do |config|
-    config.default_driver = :selenium_chrome
+    config.default_driver = @driver
     config.default_max_wait_time = 5
-end
+  endd
 
 # EL = YAML.load_file("./data/element.yml")
 
