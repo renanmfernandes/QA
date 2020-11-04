@@ -14,7 +14,7 @@ Funcionalidade: Login no chat da Stelo
             Quando entrar com NOME "Pizzaria Nobre", CPF_CNPJ "04.248.805/0001-00", E-MAIL "pizzarianobre@email.com" e TELEFONE ""
             Entao visualizo a mensagem de saudacao do assistente virtual
             
-    
+    @tentativa_login
     Esquema do Cenário: Tentativa de login no chat Stelo sem preenchimento de campos obrigatorios
         Quando entrar com NOME <NOME_ESTABELECIMENTO>, CPF_CNPJ <CPF_CNPJ>, E-MAIL <E-MAIL> e TELEFONE "(11)91234-5678"
         Entao sera exibida a mensagem "Os campos identificados com asteriscos (*) são de preenchimento obrigatório."

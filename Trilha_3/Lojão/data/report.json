@@ -37,7 +37,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 22141
+              "duration": 20766
             }
           },
           {
@@ -46,7 +46,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 17903
+              "duration": 18950
             }
           }
         ],
@@ -60,7 +60,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 801474680
+              "duration": 803920493
             }
           },
           {
@@ -75,7 +75,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2226029
+              "duration": 1908037
             }
           },
           {
@@ -87,7 +87,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 154021
+              "duration": 139681
             }
           }
         ],
@@ -104,7 +104,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 820307008
+              "duration": 901056585
             }
           },
           {
@@ -113,7 +113,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 32690
+              "duration": 41548
             }
           }
         ]
@@ -142,7 +142,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 25262
+              "duration": 20352
             }
           },
           {
@@ -151,7 +151,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 20279
+              "duration": 22322
             }
           }
         ],
@@ -165,7 +165,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 288626221
+              "duration": 286475778
             }
           },
           {
@@ -181,7 +181,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 385916
+              "duration": 529245
             }
           },
           {
@@ -193,7 +193,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 114932
+              "duration": 184402
             }
           }
         ],
@@ -210,7 +210,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 107852031
+              "duration": 119053977
             }
           },
           {
@@ -219,7 +219,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 38447
+              "duration": 18423
             }
           }
         ]
@@ -253,7 +253,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 11375
+              "duration": 20851
             }
           },
           {
@@ -262,7 +262,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 14682
+              "duration": 21497
             }
           }
         ],
@@ -276,7 +276,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 16671
+              "duration": 23838
             }
           }
         ]
@@ -304,14 +304,14 @@
             "name": "faco a requisicao com os dados do produto",
             "line": 10,
             "output": [
-              "{\"data\":{\"produtoid\":9074,\"produtonome\":\"Nintendo Wii U\",\"produtovalor\":1599,\"produtocores\":[\"Preto\",\"branco\"],\"componentes\":[{\"componenteid\":4041,\"componentenome\":\"Controle Nintendo Wii U\",\"componentequantidade\":2},{\"componenteid\":4042,\"componentenome\":\"Cabo de for\\u00e7a Nintendo Wii U\",\"componentequantidade\":1}]},\"message\":\"Produto adicionado com sucesso\",\"error\":\"\"}"
+              "{\"data\":{\"produtoid\":9082,\"produtonome\":\"Nintendo Wii U\",\"produtovalor\":1599,\"produtocores\":[\"Preto\",\"branco\"],\"componentes\":[{\"componenteid\":4059,\"componentenome\":\"Controle Nintendo Wii U\",\"componentequantidade\":2},{\"componenteid\":4060,\"componentenome\":\"Cabo de for\\u00e7a Nintendo Wii U\",\"componentequantidade\":1}]},\"message\":\"Produto adicionado com sucesso\",\"error\":\"\"}"
             ],
             "match": {
               "location": "features/step_definitions/POST_adicionar_um_novo_produto.rb:4"
             },
             "result": {
               "status": "passed",
-              "duration": 571484858
+              "duration": 669232178
             }
           },
           {
@@ -326,7 +326,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 422776
+              "duration": 206165
             }
           },
           {
@@ -338,7 +338,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 159405
+              "duration": 55927
             }
           }
         ],
@@ -355,7 +355,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 100035509
+              "duration": 132417504
             }
           },
           {
@@ -364,7 +364,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 18705
+              "duration": 18626
             }
           }
         ]
@@ -382,7 +382,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 11098
+              "duration": 12544
             }
           },
           {
@@ -391,7 +391,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 13840
+              "duration": 16191
             }
           }
         ],
@@ -405,7 +405,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 15352
+              "duration": 16123
             }
           }
         ]
@@ -433,14 +433,14 @@
             "name": "faco a requisicao pela lista de produtos",
             "line": 16,
             "output": [
-              "{\"data\":[{\"produtoid\":8265,\"produtonome\":\"Nintendo Wii U\",\"produtovalor\":1599,\"produtocores\":[\"Preto\",\"branco\"],\"componentes\":[{\"componenteid\":3843,\"componentenome\":\"Controle Nintendo Wii U\",\"componentequantidade\":2},{\"componenteid\":3844,\"componentenome\":\"Cabo de for\\u00c3\\u00a7a Nintendo Wii U\",\"componentequantidade\":1}]},{\"produtoid\":8287,\"produtonome\":\"Nintendo Switch\",\"produtovalor\":1599,\"produtocores\":[\"Preto\",\"branco\"],\"componentes\":[{\"componenteid\":3272,\"componentenome\":\"Controle Nintendo Switch\",\"componentequantidade\":2},{\"componenteid\":3273,\"componentenome\":\"Cabo de for\\u00c3\\u00a7a Nintendo Switch\",\"componentequantidade\":1}]},{\"produtoid\":8488,\"produtonome\":\"Xbox One X\",\"produtovalor\":1699.99,\"produtocores\":[\"Preto\",\"Branco\"],\"componentes\":[{\"componenteid\":3705,\"componentenome\":\"Controle Xbox One X\",\"componentequantidade\":2},{\"componenteid\":3706,\"componentenome\":\"Cabo de energia Xbox One X\",\"componentequantidade\":1}]},{\"produtoid\":8509,\"produtonome\":\"Nintendo Wii\",\"produtovalor\":1599,\"produtocores\":[\"Preto\",\"branco\"],\"componentes\":[{\"componenteid\":3560,\"componentenome\":\"Controle Nintendo Wii\",\"componentequantidade\":2},{\"componenteid\":3561,\"componentenome\":\"Cabo de for\\u00c3\\u00a7a Nintendo Wii\",\"componentequantidade\":1}]},{\"produtoid\":9062,\"produtonome\":\"Playstation 5\",\"produtovalor\":4999.99,\"produtocores\":[\"Preto\",\" Branco\"],\"componentes\":[]},{\"produtoid\":9064,\"produtonome\":\"Xbox Series X\",\"produtovalor\":4699,\"produtocores\":[\"Preto\",\"branco\"],\"componentes\":[{\"componenteid\":4025,\"componentenome\":\"Controle Xbox Series X\",\"componentequantidade\":1},{\"componenteid\":4026,\"componentenome\":\"Cabo de for\\u00c3\\u00a7a Xbox Series X\",\"componentequantidade\":1}]},{\"produtoid\":9065,\"produtonome\":\"Nintendo Wii\",\"produtovalor\":1599,\"produtocores\":[\"Preto\",\"branco\"],\"componentes\":[{\"componenteid\":4027,\"componentenome\":\"Controle Nintendo Wii\",\"componentequantidade\":2},{\"componenteid\":4028,\"componentenome\":\"Cabo de for\\u00c3\\u00a7a Nintendo Wii\",\"componentequantidade\":1}]},{\"produtoid\":9066,\"produtonome\":\"Nintendo Wii\",\"produtovalor\":1599,\"produtocores\":[\"Preto\",\"branco\"],\"componentes\":[{\"componenteid\":4029,\"componentenome\":\"Controle Nintendo Wii\",\"componentequantidade\":2},{\"componenteid\":4030,\"componentenome\":\"Cabo de for\\u00c3\\u00a7a Nintendo Wii\",\"componentequantidade\":1}]},{\"produtoid\":9070,\"produtonome\":\"Nintendo 64\",\"produtovalor\":1599,\"produtocores\":[\"Preto\",\"branco\"],\"componentes\":[]},{\"produtoid\":9071,\"produtonome\":\"Nintendo Wii\",\"produtovalor\":1599,\"produtocores\":[\"Preto\",\"branco\"],\"componentes\":[{\"componenteid\":4035,\"componentenome\":\"Controle Nintendo Wii\",\"componentequantidade\":2},{\"componenteid\":4036,\"componentenome\":\"Cabo de for\\u00c3\\u00a7a Nintendo Wii\",\"componentequantidade\":1}]},{\"produtoid\":9072,\"produtonome\":\"Nintendo Wii\",\"produtovalor\":1599,\"produtocores\":[\"Preto\",\"branco\"],\"componentes\":[{\"componenteid\":4037,\"componentenome\":\"Controle Nintendo Wii\",\"componentequantidade\":2},{\"componenteid\":4038,\"componentenome\":\"Cabo de for\\u00c3\\u00a7a Nintendo Wii\",\"componentequantidade\":1}]},{\"produtoid\":9073,\"produtonome\":\"Nintendo Wii\",\"produtovalor\":1599,\"produtocores\":[\"Preto\",\"branco\"],\"componentes\":[{\"componenteid\":4039,\"componentenome\":\"Controle Nintendo Wii\",\"componentequantidade\":2},{\"componenteid\":4040,\"componentenome\":\"Cabo de for\\u00c3\\u00a7a Nintendo Wii\",\"componentequantidade\":1}]},{\"produtoid\":9074,\"produtonome\":\"Nintendo Wii U\",\"produtovalor\":1599,\"produtocores\":[\"Preto\",\"branco\"],\"componentes\":[{\"componenteid\":4041,\"componentenome\":\"Controle Nintendo Wii U\",\"componentequantidade\":2},{\"componenteid\":4042,\"componentenome\":\"Cabo de for\\u00c3\\u00a7a Nintendo Wii U\",\"componentequantidade\":1}]}],\"message\":\"Listagem de produtos realizada com sucesso\",\"error\":\"\"}"
+              "{\"data\":[{\"produtoid\":8265,\"produtonome\":\"Nintendo Wii U\",\"produtovalor\":1599,\"produtocores\":[\"Preto\",\"branco\"],\"componentes\":[{\"componenteid\":4043,\"componentenome\":\"Controle Nintendo Wii U\",\"componentequantidade\":2},{\"componenteid\":4044,\"componentenome\":\"Cabo de for\\u00c3\\u00a7a Nintendo Wii U\",\"componentequantidade\":1}]},{\"produtoid\":8287,\"produtonome\":\"Nintendo Switch\",\"produtovalor\":1599,\"produtocores\":[\"Preto\",\"branco\"],\"componentes\":[{\"componenteid\":3272,\"componentenome\":\"Controle Nintendo Switch\",\"componentequantidade\":2},{\"componenteid\":3273,\"componentenome\":\"Cabo de for\\u00c3\\u00a7a Nintendo Switch\",\"componentequantidade\":1}]},{\"produtoid\":8488,\"produtonome\":\"Xbox One X\",\"produtovalor\":1699.99,\"produtocores\":[\"Preto\",\"Branco\"],\"componentes\":[{\"componenteid\":3705,\"componentenome\":\"Controle Xbox One X\",\"componentequantidade\":2},{\"componenteid\":3706,\"componentenome\":\"Cabo de energia Xbox One X\",\"componentequantidade\":1}]},{\"produtoid\":8509,\"produtonome\":\"Nintendo Wii\",\"produtovalor\":1599,\"produtocores\":[\"Preto\",\"branco\"],\"componentes\":[{\"componenteid\":3560,\"componentenome\":\"Controle Nintendo Wii\",\"componentequantidade\":2},{\"componenteid\":3561,\"componentenome\":\"Cabo de for\\u00c3\\u00a7a Nintendo Wii\",\"componentequantidade\":1}]},{\"produtoid\":9062,\"produtonome\":\"Playstation 5\",\"produtovalor\":4999.99,\"produtocores\":[\"Preto\",\" Branco\"],\"componentes\":[]},{\"produtoid\":9064,\"produtonome\":\"Xbox Series X\",\"produtovalor\":4699,\"produtocores\":[\"Preto\",\"branco\"],\"componentes\":[{\"componenteid\":4025,\"componentenome\":\"Controle Xbox Series X\",\"componentequantidade\":1},{\"componenteid\":4026,\"componentenome\":\"Cabo de for\\u00c3\\u00a7a Xbox Series X\",\"componentequantidade\":1}]},{\"produtoid\":9065,\"produtonome\":\"Nintendo Wii\",\"produtovalor\":1599,\"produtocores\":[\"Preto\",\"branco\"],\"componentes\":[{\"componenteid\":4027,\"componentenome\":\"Controle Nintendo Wii\",\"componentequantidade\":2},{\"componenteid\":4028,\"componentenome\":\"Cabo de for\\u00c3\\u00a7a Nintendo Wii\",\"componentequantidade\":1}]},{\"produtoid\":9066,\"produtonome\":\"Nintendo Wii\",\"produtovalor\":1599,\"produtocores\":[\"Preto\",\"branco\"],\"componentes\":[{\"componenteid\":4029,\"componentenome\":\"Controle Nintendo Wii\",\"componentequantidade\":2},{\"componenteid\":4030,\"componentenome\":\"Cabo de for\\u00c3\\u00a7a Nintendo Wii\",\"componentequantidade\":1}]},{\"produtoid\":9070,\"produtonome\":\"Nintendo 64\",\"produtovalor\":1599,\"produtocores\":[\"Preto\",\"branco\"],\"componentes\":[]},{\"produtoid\":9072,\"produtonome\":\"Nintendo Wii\",\"produtovalor\":1599,\"produtocores\":[\"Preto\",\"branco\"],\"componentes\":[{\"componenteid\":4037,\"componentenome\":\"Controle Nintendo Wii\",\"componentequantidade\":2},{\"componenteid\":4038,\"componentenome\":\"Cabo de for\\u00c3\\u00a7a Nintendo Wii\",\"componentequantidade\":1}]},{\"produtoid\":9073,\"produtonome\":\"Nintendo Wii\",\"produtovalor\":1599,\"produtocores\":[\"Preto\",\"branco\"],\"componentes\":[{\"componenteid\":4039,\"componentenome\":\"Controle Nintendo Wii\",\"componentequantidade\":2},{\"componenteid\":4040,\"componentenome\":\"Cabo de for\\u00c3\\u00a7a Nintendo Wii\",\"componentequantidade\":1}]},{\"produtoid\":9074,\"produtonome\":\"Nintendo Wii U\",\"produtovalor\":1599,\"produtocores\":[\"Preto\",\"branco\"],\"componentes\":[{\"componenteid\":4041,\"componentenome\":\"Controle Nintendo Wii U\",\"componentequantidade\":2},{\"componenteid\":4042,\"componentenome\":\"Cabo de for\\u00c3\\u00a7a Nintendo Wii U\",\"componentequantidade\":1}]},{\"produtoid\":9075,\"produtonome\":\"Nintendo Wii\",\"produtovalor\":1599,\"produtocores\":[\"Preto\",\"branco\"],\"componentes\":[{\"componenteid\":4045,\"componentenome\":\"Controle Nintendo Wii\",\"componentequantidade\":2},{\"componenteid\":4046,\"componentenome\":\"Cabo de for\\u00c3\\u00a7a Nintendo Wii\",\"componentequantidade\":1}]},{\"produtoid\":9076,\"produtonome\":\"Nintendo Wii\",\"produtovalor\":1599,\"produtocores\":[\"Preto\",\"branco\"],\"componentes\":[{\"componenteid\":4047,\"componentenome\":\"Controle Nintendo Wii\",\"componentequantidade\":2},{\"componenteid\":4048,\"componentenome\":\"Cabo de for\\u00c3\\u00a7a Nintendo Wii\",\"componentequantidade\":1}]},{\"produtoid\":9077,\"produtonome\":\"Nintendo Wii\",\"produtovalor\":1599,\"produtocores\":[\"Preto\",\"branco\"],\"componentes\":[{\"componenteid\":4049,\"componentenome\":\"Controle Nintendo Wii\",\"componentequantidade\":2},{\"componenteid\":4050,\"componentenome\":\"Cabo de for\\u00c3\\u00a7a Nintendo Wii\",\"componentequantidade\":1}]},{\"produtoid\":9081,\"produtonome\":\"Nintendo Wii\",\"produtovalor\":1599,\"produtocores\":[\"Preto\",\"branco\"],\"componentes\":[{\"componenteid\":4057,\"componentenome\":\"Controle Nintendo Wii\",\"componentequantidade\":2},{\"componenteid\":4058,\"componentenome\":\"Cabo de for\\u00c3\\u00a7a Nintendo Wii\",\"componentequantidade\":1}]},{\"produtoid\":9082,\"produtonome\":\"Nintendo Wii U\",\"produtovalor\":1599,\"produtocores\":[\"Preto\",\"branco\"],\"componentes\":[{\"componenteid\":4059,\"componentenome\":\"Controle Nintendo Wii U\",\"componentequantidade\":2},{\"componenteid\":4060,\"componentenome\":\"Cabo de for\\u00c3\\u00a7a Nintendo Wii U\",\"componentequantidade\":1}]}],\"message\":\"Listagem de produtos realizada com sucesso\",\"error\":\"\"}"
             ],
             "match": {
               "location": "features/step_definitions/GET_buscar_produtos.rb:1"
             },
             "result": {
               "status": "passed",
-              "duration": 759410696
+              "duration": 545172625
             }
           },
           {
@@ -455,7 +455,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 895772
+              "duration": 896451
             }
           },
           {
@@ -467,7 +467,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 136854
+              "duration": 140721
             }
           }
         ],
@@ -484,7 +484,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 177675334
+              "duration": 121307507
             }
           },
           {
@@ -493,7 +493,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 22274
+              "duration": 22407
             }
           }
         ]
@@ -511,7 +511,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 10681
+              "duration": 11224
             }
           },
           {
@@ -520,7 +520,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 14856
+              "duration": 16254
             }
           }
         ],
@@ -534,7 +534,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 17570
+              "duration": 16259
             }
           }
         ]
@@ -562,14 +562,14 @@
             "name": "faco a requisicao com o \"ID\" do produto",
             "line": 22,
             "output": [
-              "{\"data\":{\"produtoid\":9062,\"produtonome\":\"Playstation 5\",\"produtovalor\":4999.99,\"produtocores\":[\"Preto\",\" Branco\"],\"componentes\":[]},\"message\":\"Detalhando dados do produto\",\"error\":\"\"}"
+              "{\"data\":{\"produtoid\":9070,\"produtonome\":\"Nintendo 64\",\"produtovalor\":1599,\"produtocores\":[\"Preto\",\"branco\"],\"componentes\":[]},\"message\":\"Detalhando dados do produto\",\"error\":\"\"}"
             ],
             "match": {
               "location": "features/step_definitions/GET_buscar_produto.rb:1"
             },
             "result": {
               "status": "passed",
-              "duration": 545038546
+              "duration": 551939525
             }
           },
           {
@@ -584,7 +584,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 351027
+              "duration": 491940
             }
           },
           {
@@ -596,7 +596,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 100625
+              "duration": 424817
             }
           }
         ],
@@ -613,7 +613,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 105076261
+              "duration": 114234240
             }
           },
           {
@@ -622,7 +622,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 18838
+              "duration": 20765
             }
           }
         ]
@@ -640,7 +640,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 12961
+              "duration": 12005
             }
           },
           {
@@ -649,7 +649,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 15951
+              "duration": 15755
             }
           }
         ],
@@ -663,7 +663,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 15955
+              "duration": 16724
             }
           }
         ]
@@ -691,14 +691,14 @@
             "name": "faco a requisicao com os novos dados e a \"ID\" do produto a ser alterado",
             "line": 28,
             "output": [
-              "{\"data\":{\"produtoid\":8265,\"produtonome\":\"Nintendo Wii U\",\"produtovalor\":1599,\"produtocores\":[\"Preto\",\"branco\"],\"componentes\":[{\"componenteid\":4043,\"componentenome\":\"Controle Nintendo Wii U\",\"componentequantidade\":2},{\"componenteid\":4044,\"componentenome\":\"Cabo de for\\u00e7a Nintendo Wii U\",\"componentequantidade\":1}]},\"message\":\"Produto alterado com sucesso\",\"error\":\"\"}"
+              "{\"data\":{\"produtoid\":9070,\"produtonome\":\"Nintendo Wii U\",\"produtovalor\":1599,\"produtocores\":[\"Preto\",\"branco\"],\"componentes\":[{\"componenteid\":4061,\"componentenome\":\"Controle Nintendo Wii U\",\"componentequantidade\":2},{\"componenteid\":4062,\"componentenome\":\"Cabo de for\\u00e7a Nintendo Wii U\",\"componentequantidade\":1}]},\"message\":\"Produto alterado com sucesso\",\"error\":\"\"}"
             ],
             "match": {
               "location": "features/step_definitions/PUT_alterar_produto.rb:1"
             },
             "result": {
               "status": "passed",
-              "duration": 668938438
+              "duration": 919576559
             }
           },
           {
@@ -713,7 +713,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 377640
+              "duration": 370474
             }
           },
           {
@@ -725,7 +725,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 165427
+              "duration": 121933
             }
           }
         ],
@@ -742,7 +742,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 124189595
+              "duration": 110882343
             }
           },
           {
@@ -751,7 +751,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 19290
+              "duration": 19402
             }
           }
         ]
@@ -769,7 +769,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 11449
+              "duration": 11435
             }
           },
           {
@@ -778,7 +778,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 28373
+              "duration": 15665
             }
           }
         ],
@@ -792,7 +792,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 17487
+              "duration": 15842
             }
           }
         ]
@@ -827,7 +827,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 762207602
+              "duration": 553137187
             }
           },
           {
@@ -842,7 +842,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 270430
+              "duration": 237033
             }
           }
         ],
@@ -859,7 +859,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 111849617
+              "duration": 147847526
             }
           },
           {
@@ -868,7 +868,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 19541
+              "duration": 16833
             }
           }
         ]
