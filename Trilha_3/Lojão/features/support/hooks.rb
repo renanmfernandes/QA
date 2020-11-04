@@ -19,9 +19,9 @@ at_exit do
       config.report_types = [:html]
       config.color = "indigo"
       config.report_tabs = %w[Overview Features Scenarios Errors]
-      config.report_title = "Automação de Testes - Report"
+      config.report_title = "Automação de Testes de API - Report"
       config.compress_images = true
-      config.additional_info = { "Projeto" => "Academia - Trilha 3 - Luma", "Data de execução" => "#{data}" " #{hora}", "QA" => "Renan Fernandes" }
+      config.additional_info = { "Projeto" => "Academia - Trilha 3 - Lojão", "Data de execução" => "#{data}" " #{hora}", "QA" => "Renan Fernandes" }
     end
   ReportBuilder.build_report
 end
