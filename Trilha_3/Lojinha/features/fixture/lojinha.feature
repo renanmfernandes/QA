@@ -1,5 +1,5 @@
 #language: pt
-@e3e
+@e2e
 Funcionalidade: Criar usuario na API da Lojinha
 
     Contexto:
@@ -30,10 +30,3 @@ Funcionalidade: Criar usuario na API da Lojinha
         E faco a requisicao pela lista de produtos
         Entao e retornado a resposta "200"
         E valido a mensagem "Listagem de produtos realizada com sucesso"
-
-    @buscar_produto
-     Cenario: Validar API GET - Buscar produto
-        Quando estou autenticado na API
-        E faco a requisicao com o "ID" do produto
-        Entao e retornado a resposta "200"
-        E valido a mensagem "Detalhando dados do produto"
