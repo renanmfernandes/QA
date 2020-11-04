@@ -1,5 +1,5 @@
 Quando("faco a requisicao com o {string} do produto a ser deletado") do |id|
-  id = 9070
+  id = 9085
   @response = produto.delete_apagar_produto(id)
   puts @response.body
 end

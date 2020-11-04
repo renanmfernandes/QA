@@ -32,19 +32,19 @@ module Rest
 
     def gerar_dados_produto
       return body = {
-               "produtonome": "Nintendo Wii U",
-               "produtovalor": 1599.00,
+               "produtonome": "Nintendo 64",
+               "produtovalor": 599.00,
                "produtocores": [
                  "Preto",
                  "branco",
                ],
                "componentes": [
                  {
-                   "componentenome": "Controle Nintendo Wii U",
+                   "componentenome": "Controle Nintendo 64",
                    "componentequantidade": 2,
                  },
                  {
-                   "componentenome": "Cabo de força Nintendo Wii U",
+                   "componentenome": "Cabo de força Nintendo 64",
                    "componentequantidade": 1,
                  },
                ],
