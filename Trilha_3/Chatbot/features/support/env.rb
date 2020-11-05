@@ -26,10 +26,8 @@ else
 end
 
 Capybara.configure do |config|
-    config.default_driver = @driver
-    config.default_max_wait_time = 5
-  end
-
-# EL = YAML.load_file("./data/element.yml")
+  config.default_driver = @driver
+  config.default_max_wait_time = 5
+end
 
 EL = YAML.load_file(File.join(Dir.pwd, "features/data/element.yml"))
