@@ -1,5 +1,5 @@
 #language: pt
-@trilha_2
+@e2e
 Funcionalidade: Cadastro de Usuario e Pedido de um produto
 
     Contexto: 
