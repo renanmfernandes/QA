@@ -26,7 +26,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 20190
+              "duration": 27339
             }
           },
           {
@@ -35,7 +35,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 19739
+              "duration": 23846
             }
           }
         ],
@@ -49,7 +49,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 22075
+              "duration": 24129
             }
           }
         ]
@@ -77,14 +77,14 @@
             "name": "faco a requisicao com os dados do produto",
             "line": 10,
             "output": [
-              "{\"data\":{\"produtoid\":9100,\"produtonome\":\"Nintendo 64\",\"produtovalor\":599,\"produtocores\":[\"Preto\",\"branco\"],\"componentes\":[{\"componenteid\":4093,\"componentenome\":\"Controle Nintendo 64\",\"componentequantidade\":2},{\"componenteid\":4094,\"componentenome\":\"Cabo de for\\u00e7a Nintendo 64\",\"componentequantidade\":1}]},\"message\":\"Produto adicionado com sucesso\",\"error\":\"\"}"
+              "{\"data\":{\"produtoid\":9103,\"produtonome\":\"Nintendo 64\",\"produtovalor\":599,\"produtocores\":[\"Preto\",\"branco\"],\"componentes\":[{\"componenteid\":4099,\"componentenome\":\"Controle Nintendo 64\",\"componentequantidade\":2},{\"componenteid\":4100,\"componentenome\":\"Cabo de for\\u00e7a Nintendo 64\",\"componentequantidade\":1}]},\"message\":\"Produto adicionado com sucesso\",\"error\":\"\"}"
             ],
             "match": {
               "location": "features/step_definitions/POST_adicionar_um_novo_produto.rb:4"
             },
             "result": {
               "status": "passed",
-              "duration": 597284980
+              "duration": 573390676
             }
           },
           {
@@ -99,7 +99,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 3242823
+              "duration": 2593224
             }
           },
           {
@@ -111,7 +111,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 150740
+              "duration": 168796
             }
           }
         ],
@@ -128,7 +128,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1475165362
+              "duration": 788398686
             }
           },
           {
@@ -137,7 +137,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 31545
+              "duration": 39027
             }
           }
         ]
