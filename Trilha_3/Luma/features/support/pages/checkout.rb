@@ -14,6 +14,7 @@ class Checkout
     end
 
     def finalizar_pedido
+        sleep 5
         find(EL["luma_btn_show_carrinho"]).click
         find(EL["luma_btn_checkout_1"]).click
         assert_no_selector(EL["luma_loader_checkout"])

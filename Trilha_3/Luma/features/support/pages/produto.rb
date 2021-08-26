@@ -3,8 +3,8 @@ class Produto
     include RSpec::Matchers
 
     def add_carrinho
-        find(EL["luma_btn_produto"]).click
-        find(EL["luna_btn_add_carinho"]).click
+        first(EL["luma_btn_produto"]).click
+        find(EL["luma_btn_add_carinho"]).click
         sleep 2
     end
 end

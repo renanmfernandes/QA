@@ -1,8 +1,8 @@
 # Acessar site
-Luma: "https://magento.nublue.co.uk/"
+Luma: "http://devm2.bsscommerce.com/magento242/pub/"
 
 # Criar conta
-luma_btn_criar:          "a[href='https://magento.nublue.co.uk/customer/account/create/']"
+luma_btn_criar:          "a[href='http://devm2.bsscommerce.com/magento242/pub/customer/account/create/']"
 luma_primeiro_nome:      "#firstname"
 luma_segundo_nome:       "#lastname"
 luma_inscrever:          "#is_subscribed"
@@ -23,7 +23,7 @@ luma_senha:              "#pass"
 luma_btn_singin:         ".authorization-link"
 luma_btn_login:          "#send2"
 luma_btn_produto:        ".product-item-link"
-luna_btn_add_carinho:    "#product-addtocart-button"
+luma_btn_add_carinho:    "#product-addtocart-button"
 luma_btn_show_carrinho:  ".showcart"
 luma_btn_checkout_1:     "#top-cart-btn-checkout"
 luma_campo_nome:         "input[name='company']"
