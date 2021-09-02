@@ -36,4 +36,7 @@ at_exit do
     config.additional_info = { "Projeto" => "Academia - Trilha 3 - Luma", "Data de execução" => "#{data}" " #{hora}", "QA" => "Renan Fernandes" }
   end
   ReportBuilder.build_report
+  File.delete("./data/img/#{sufix}-#{name}.png") if File.exist?("./data/img/#{sufix}-#{name}.png")
+  File.delete("./data/report.json") if File.exist?("./data/report.json")
+  File.delete("./data/report.html") if File.exist?("./data/report.html")
 end
