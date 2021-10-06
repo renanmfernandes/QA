@@ -1,0 +1,5 @@
+data/img
+data/img/*.png
+data/*.json
+data/*.html
+Gemfile.lock
