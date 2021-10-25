@@ -1,8 +1,8 @@
 # Acessar site
-Luma: "https://magento2.algolia.com/"
+Luma: "https://study.m2.webjumpdev.com/"
 
 # Criar conta
-luma_btn_criar:          "a[href='https://magento2.algolia.com/customer/account/create/']"
+luma_btn_criar:          "a[href='https://study.m2.webjumpdev.com/customer/account/create/']"
 luma_primeiro_nome:      "#firstname"
 luma_segundo_nome:       "#lastname"
 luma_inscrever:          "#is_subscribed"
