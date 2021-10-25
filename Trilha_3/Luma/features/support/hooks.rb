@@ -12,9 +12,10 @@ end
 
 After do |scenario|
   Dir.mkdir("data") unless Dir.exist?("data")
-  sufix = ("error" if scenario.failed?) || "success"
-  name = scenario.name.tr(" ", "_").downcase
-  image_name = "data/img/#{sufix}-#{name}.png"
+  # sufix = ("error" if scenario.failed?) || "success"
+  # name = scenario.name.tr(" ", "_").downcase
+  # image_name = "data/img/#{sufix}-#{name}.png"
+  image_name = "data/img/screenshot.png"
   temp_shot = page.save_screenshot(image_name)
   file_shot = File.open(temp_shot, "rb").read
   final_shot = Base64.encode64(file_shot)
@@ -36,7 +37,7 @@ at_exit do
     config.additional_info = { "Projeto" => "Academia - Trilha 3 - Luma", "Data de execução" => "#{data}" " #{hora}", "QA" => "Renan Fernandes" }
   end
   ReportBuilder.build_report
-  File.delete("./data/img/#{sufix}-#{name}.png") if File.exist?("./data/img/#{sufix}-#{name}.png")
+  File.delete("./data/img/screenshot.png") if File.exist?("./data/img/screenshot.png")
   File.delete("./data/report.json") if File.exist?("./data/report.json")
   File.delete("./data/report.html") if File.exist?("./data/report.html")
 end
