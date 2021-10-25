@@ -19,7 +19,7 @@ After do |scenario|
   temp_shot = page.save_screenshot(image_name)
   file_shot = File.open(temp_shot, "rb").read
   final_shot = Base64.encode64(file_shot)
-  attach(final_shot, "image/png")
+  embed(temp_shot, "image/png", "Clique aqui para ver a evidência!")
 end
 
 at_exit do
