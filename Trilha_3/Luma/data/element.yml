@@ -15,6 +15,7 @@ luma_mensagem_base:      ".base"
 #Busca
 luma_pesquisa:           "#search"
 luma_loader:             ".loader"
+luma_loader_mask:        ".loading-mask"
 luma_loader_checkout:    "#checkout-loader"
 
 #e2e
