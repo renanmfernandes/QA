@@ -36,6 +36,8 @@ class Checkout
     first(EL["luma_btn_radio"]).click
     find(EL["luma_btn_continue"]).click
     assert_no_selector(EL["luma_loader"])
+    first(EL["luma_btn_radio"]).click
+    assert_no_selector(EL["luma_loader"])
     find(EL["luma_btn_checkout_2"]).click
     assert_no_selector(EL["luma_loader"])
   end
